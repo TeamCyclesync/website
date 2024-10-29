@@ -69,4 +69,9 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Gradients and colors*/
+  .gradient-bg {
+    @apply bg-gradient-to-bl from-violet-600 via-pink-600 to-amber-500 bg-120%;
+  }
 }
