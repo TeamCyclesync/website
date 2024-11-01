@@ -1,6 +1,6 @@
 import { NavLinkList } from "@/constants"
-import Link from "next/link"
 import { Button } from "../ui/button"
+import DesktopNavlink from "./DesktopNavlink"
 
 const DesktopNavlinks = () => {
   return (
@@ -12,9 +12,9 @@ const DesktopNavlinks = () => {
                     {link.title}
                 </Button>
                 :
-                <Link href={link.link} key={index}>
+                <DesktopNavlink href={link.link} key={index}>
                     {link.title}
-                </Link>
+                </DesktopNavlink>
             ))
         }
     </nav>

@@ -1,7 +1,9 @@
+import HeroSection from "@/components/landing/HeroSection"
+
 const LandingPage = () => {
   return (
-    <div className='min-h-screen gradient-bg'>
-      
+    <div className='gradient-bg min-h-screen pt-[3.5rem]'>
+      <HeroSection />
     </div>
   )
 }

@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		cursor: {
+			default: 'url("/assets/custom_cursor.png")'
+		},
 		backgroundSize: {
 			"120%": "120%"
 		},
