@@ -1,9 +1,13 @@
 import HeroSection from "@/components/landing/HeroSection"
+import Navigation from "@/components/nav/Navigation"
 
 const LandingPage = () => {
   return (
-    <div className='gradient-bg min-h-screen pt-[3.5rem]'>
-      <HeroSection />
+    <div className='gradient-bg min-h-screen grid grid-rows-[auto_1fr_auto]'>
+      <Navigation />
+      <main>
+        <HeroSection />
+      </main>
     </div>
   )
 }

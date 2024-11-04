@@ -4,6 +4,10 @@ export const NavLinkList = [
         link: '/',
     },
     {
+        title: "Services",
+        link: "#services"
+    },
+    {
         title: 'About',
         link: '#about'
     },

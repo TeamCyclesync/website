@@ -74,4 +74,9 @@ body {
   .gradient-bg {
     @apply bg-gradient-to-bl from-violet-600 via-pink-600 to-amber-500 bg-120%;
   }
+
+  /*  */
+  .text-glow {
+    text-shadow: 0 0 5px rgb(239, 16, 146);
+  }
 }
