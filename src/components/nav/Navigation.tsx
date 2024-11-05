@@ -2,6 +2,7 @@
 import DesktopNavlinks from "./DesktopNavlinks"
 import MobileNavlinks from "./MobileNavlinks"
 import { motion } from "framer-motion"
+import { RiHourglass2Line } from "react-icons/ri"
 
 const Navigation = () => {
     return (
@@ -12,14 +13,17 @@ const Navigation = () => {
             className="z-[100] md:px-8 px-4 py-3 sticky top-0 left-0 flex justify-between items-center w-full"
         >
             <div className="logo">
-                <span className="text-white tracking-tighter font-semibold text-2xl">
-                    CycleSync
+                <span className="text-white text-[22px] flex gap-2 items-center">
+                    <span className="p-1 rounded-full border-2">
+                        <RiHourglass2Line size={20} className="text-White"/>
+                    </span>
+                    <span className="tracking-tighter font-semibold">Cycle<span className="text-teal-200">sync</span></span>
                 </span>
 
             </div>
             {/* Desktop navigation links */}
             <DesktopNavlinks />
-
+            
             <MobileNavlinks />
         </motion.div>
     )
