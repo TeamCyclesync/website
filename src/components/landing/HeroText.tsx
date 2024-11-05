@@ -21,14 +21,14 @@ const HeroText = () => {
 
             <div className='flex max-sm:flex-col max-sm:flex-col max-sm:w-full max-md:max-w-[370px] gap-4 mx-auto'>
                 <Link href={"/"} className='hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.15)] transition-all duration-300 ease-out'>
-                    <Button variant={'outline'} className='font-[700] w-[100%] hover:scale-105 transition-all duration-300 ease-out' size={'lg'}>
-                        <RiMap2Line size={30}/>
+                    <Button variant={'outline'} className='font-[500] w-[100%] hover:scale-105 transition-all duration-300 ease-out' size={'lg'}>
+                        <RiMap2Line size={32}/>
                         Explore Lydia
                     </Button>
                 </Link>
                 <Link href={"/"} className='hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.15)] transition-all duration-300 ease-out'>
                     <Button className='text-fuchsia-100 w-[100%] hover:scale-105 transition-all duration-300 ease-out border border-white/20' size={'lg'}>
-                        <FaAppStore size={30}/>
+                        <FaAppStore size={32}/>
                         Download the App
                     </Button>
                 </Link>

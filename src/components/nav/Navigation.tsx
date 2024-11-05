@@ -13,11 +13,11 @@ const Navigation = () => {
             className="z-[100] md:px-8 px-4 py-3 sticky top-0 left-0 flex justify-between items-center w-full"
         >
             <div className="logo">
-                <span className="text-white text-[22px] flex gap-2 items-center">
+                <span className="text-white text-[20px] flex gap-2 items-center">
                     <span className="p-1 rounded-full border-2">
                         <RiHourglass2Line className="text-White"/>
                     </span>
-                    <span className="tracking-tighter font-semibold max-md:hidden">Cycle<span className="text-teal-300">sync</span></span>
+                    <span className="tracking-tighter font-semibold max-md:hidden">Cyclesync</span>
                 </span>
 
             </div>
