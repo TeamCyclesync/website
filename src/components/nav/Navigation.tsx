@@ -15,9 +15,9 @@ const Navigation = () => {
             <div className="logo">
                 <span className="text-white text-[22px] flex gap-2 items-center">
                     <span className="p-1 rounded-full border-2">
-                        <RiHourglass2Line size={20} className="text-White"/>
+                        <RiHourglass2Line className="text-White"/>
                     </span>
-                    <span className="tracking-tighter font-semibold">Cycle<span className="text-teal-200">sync</span></span>
+                    <span className="tracking-tighter font-semibold max-md:hidden">Cycle<span className="text-teal-300">sync</span></span>
                 </span>
 
             </div>

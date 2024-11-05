@@ -1,9 +1,10 @@
 import { RiAppsLine } from "react-icons/ri"
+import { RiMenu2Fill } from "react-icons/ri"
 
 const MobileNavlinks = () => {
   return (
     <div className="md:hidden">
-        <RiAppsLine size={25} className="text-white"/>
+        <RiMenu2Fill size={25} className="text-white"/>
     </div>
   )
 }
