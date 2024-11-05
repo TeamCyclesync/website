@@ -23,13 +23,6 @@ export default function RootLayout({
         className={`${inter.className} antialiased relative overflow-hidden`}
       >
         {children}
-
-        <HeroFloatingImage className="top-[6rem] bg-transparent" slideFrom="left">
-          <Image src={"/assets/hero1.jpg"} alt="Hero Image" fill className="object-cover rounded-lg opacity-90"/>
-        </HeroFloatingImage>
-        <HeroFloatingImage className="top-[12rem] bg-transparent" slideFrom="right">
-          <Image src={"/assets/hero2.jpg"} alt="Hero Image" fill className="object-cover rounded-lg opacity-90"/>
-        </HeroFloatingImage>
       </body>
     </html>
   );

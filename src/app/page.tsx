@@ -3,7 +3,7 @@ import Navigation from "@/components/nav/Navigation"
 
 const LandingPage = () => {
   return (
-    <div className='gradient-bg min-h-screen grid grid-rows-[auto_1fr_auto]'>
+    <div className='gradient-bg min-h-screen grid grid-rows-[auto_1fr_auto] relative'>
       <Navigation />
       <main>
         <HeroSection />
