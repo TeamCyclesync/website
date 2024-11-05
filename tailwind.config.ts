@@ -15,6 +15,9 @@ const config: Config = {
 		backgroundSize: {
 			"120%": "120%"
 		},
+		screens: {
+			'xsm': '500px'
+		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

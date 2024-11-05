@@ -80,4 +80,9 @@ body {
     text-shadow: 0 0 8px rgba(0 0 0 / 50%);
   }
 }
-  
+
+@media (max-width < 600px) {
+  * {
+    animation: none !important;
+  }
+}
