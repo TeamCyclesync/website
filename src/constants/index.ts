@@ -1,5 +1,4 @@
-import { PopupDisplayProps } from "@/components/landing/PopupDisplay"
-import { RiAccountCircleLine } from "react-icons/ri"
+import { TeamMemberProps } from "@/components/landing/TeamMember"
 
 export const NavLinkList = [
     {
@@ -20,47 +19,45 @@ export const NavLinkList = [
     }
 ]
 
-// export const PopContent: PopupDisplayProps[]= [
-//     {
-//         label: "Personalized Experience",
-//         icon: RiAccountCircleLine,
-//         popFrom: "left",
-//         delayAmount: [0.5, 0.5],
-//         smallerScreenSupport: true
-//     },
-//     {
-//         label: "Personalized Experience",
-//         icon: RiAccountCircleLine,
-//         popFrom: "left",
-//         delayAmount: [0.5, 0.65],
-//         smallerScreenSupport: true
-//     },
-//     {
-//         label: "Personalized Experience",
-//         icon: RiAccountCircleLine,
-//         popFrom: "left",
-//         delayAmount: [0.5, 0.8],
-//         smallerScreenSupport: true
-//     },
-//     {
-//         label: "Personalized Experience",
-//         icon: RiAccountCircleLine,
-//         popFrom: "right",
-//         delayAmount: [0.5, 0.5],
-//         smallerScreenSupport: true
-//     },
-//     {
-//         label: "Personalized Experience",
-//         icon: RiAccountCircleLine,
-//         popFrom: "right",
-//         delayAmount: [0.5, 0.65],
-//         smallerScreenSupport: true
-//     },
-//     {
-//         label: "Personalized Experience",
-//         icon: RiAccountCircleLine,
-//         popFrom: "right",
-//         delayAmount: [0.5, 0.8],
-//         smallerScreenSupport: true
-//     }
-// ]
+export const TeamMemberDetails: TeamMemberProps[]= [
+    {
+        name: "Kamatham Soujanya",
+        designation: "Founder, Cyclesync",
+        vision: "Cyclesync is our vison and our dream. Our goal is to empower every woman and every household through innovative solutions",
+        image: "/assets/placeholder-pfp.png",
+        twitter: "www.google.com",
+        instagram: "www.google.com",
+        github: "www.google.com",
+        linkedin: "www.google.com"
+    },
+    {
+        name: "Devansh Purohit",
+        designation: "Co Founder, Cyclesync",
+        vision: "Cyclesync is our vison and our dream. Our goal is to empower every woman and every household through innovative solutions",
+        image: "/assets/placeholder-pfp.png",
+        twitter: "www.google.com",
+        instagram: "www.google.com",
+        github: "www.google.com",
+        linkedin: "www.google.com"
+    },
+    {
+        name: "Rex Ryan",
+        designation: "UI & UX Designer",
+        vision: "Cyclesync is our vison and our dream. Our goal is to empower every woman and every household through innovative solutions",
+        image: "/assets/placeholder-pfp.png",
+        twitter: "www.google.com",
+        instagram: "www.google.com",
+        github: "www.google.com",
+        linkedin: "www.google.com"
+    },
+    {
+        name: "Jaspreet Kaur",
+        designation: "Research Lead",
+        vision: "Cyclesync is our vison and our dream. Our goal is to empower every woman and every household through innovative solutions",
+        image: "/assets/placeholder-pfp.png",
+        twitter: "www.google.com",
+        instagram: "www.google.com",
+        github: "www.google.com",
+        linkedin: "www.google.com"
+    }
+]

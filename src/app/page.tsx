@@ -1,3 +1,4 @@
+import AboutUs from "@/components/landing/AboutUs"
 import AppDisplay from "@/components/landing/AppDisplay"
 import Footer from "@/components/landing/Footer"
 import HeroSection from "@/components/landing/HeroSection"
@@ -8,16 +9,20 @@ const LandingPage = () => {
   return (
     <div className='gradient-bg dotted-grid-mask min-h-screen grid grid-rows-[auto_1fr_auto] relative'>
       {/* Scroll Prompt */}
-      <ScrollPrompt />
+      {/* <ScrollPrompt /> */}
 
       <Navigation />
       <main className="flex flex-col max-sm:gap-[5rem] gap-[2rem]">
+        {/* Hero Section */}
         <HeroSection />
 
+        {/* Mobile app display */}
         <AppDisplay />
 
-        <Footer />
+        {/* Team Intro / About us  */}
+        <AboutUs />
       </main>
+      <Footer />
     </div>
   )
 }
