@@ -1,4 +1,5 @@
 import AppDisplay from "@/components/landing/AppDisplay"
+import Footer from "@/components/landing/Footer"
 import HeroSection from "@/components/landing/HeroSection"
 import ScrollPrompt from "@/components/landing/ScrollPrompt"
 import Navigation from "@/components/nav/Navigation"
@@ -14,6 +15,8 @@ const LandingPage = () => {
         <HeroSection />
 
         <AppDisplay />
+
+        <Footer />
       </main>
     </div>
   )
