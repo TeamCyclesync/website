@@ -4,7 +4,7 @@ import {
     motion,
     useInView
 } from 'framer-motion'
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { cn } from "@/lib/utils";
 import PopupDisplay from "./PopupDisplay";
 import { RiAccountCircleLine } from "react-icons/ri";
@@ -16,10 +16,6 @@ const AppDisplay = () => {
         amount: 0.5,
         once: true
     });
-
-    useEffect(() => {
-        console.log(`The element ${isInView ? "is" : "is not"} in view`);
-    }, [isInView])
 
     return (
         <motion.div

@@ -1,11 +1,30 @@
+'use client'
 import { TeamMemberDetails } from '@/constants'
 import React from 'react'
 import TeamMember from './TeamMember'
+import { motion, useInView } from "framer-motion"
+import { useRef } from 'react'
 
 const AboutUs = () => {
+  const containerRef = useRef(null);
+  const isInView = useInView(containerRef, {
+    amount: 0.4,
+    once: true
+  });
+
   return (
-    <div
-      className='flex flex-col gap-[5rem] max-w-[850px] px-[1rem] mx-auto text-center'
+    <motion.div
+      className='flex flex-col gap-[5rem] max-w-[850px] px-[1rem] mx-auto text-center mt-[2rem]'
+      ref={containerRef}
+
+      initial={{
+        opacity: 0,
+        translateY: "20px"
+      }}
+      animate={{
+        opacity: isInView ? 1 : 0,
+        translateY: isInView ? 0 : "20px"
+      }}
     >
 
       <div className="flex flex-col gap-2 max-md:w-full">
@@ -14,11 +33,11 @@ const AboutUs = () => {
           Easily manage your cycle with our intuitive interface. Track symptoms, set reminders, and gain insights into your menstrual health.
         </p>
       </div>
-      
-      <div className='grid xsm:grid-cols-2 md:gap-x-8 md:gap-y-10 gap-x-6 xsm:gap-y-8 gap-y-12'>
+
+      <div className='grid xsm:grid-cols-2 md:gap-x-8 md:gap-y-12 gap-x-6 xsm:gap-y-8 gap-y-12'>
         {
           TeamMemberDetails.map((teamMember, index) => (
-            <TeamMember 
+            <TeamMember
               key={index}
               name={teamMember.name}
               designation={teamMember.designation}
@@ -32,7 +51,7 @@ const AboutUs = () => {
           ))
         }
       </div>
-    </div>
+    </motion.div>
   )
 }
 

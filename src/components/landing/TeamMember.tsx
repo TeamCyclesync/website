@@ -20,8 +20,14 @@ const TeamMember: FC<TeamMemberProps> = ({ name, designation, image, vision, lin
     return (
         <div className="relative bg-white shadow-lg hover:shadow-xl hover:scale-105 px-8 pt-[3rem] md:pt-[3.5rem] pb-4 rounded-xl transition-all duration-300 ease-in-out flex flex-col gap-4">
             {/* Team member pfp */}
-            <div className="absolute rounded-full h-[60px] w-[60px] md:h-[75px] md:w-[75px] top-[-15%] left-[50%] translate-x-[-50%] border-[5px] border-white shadow-md">
-                <Image src={image} alt={`${name}'s Profile Picture`} width={100} height={100} className="object-contain" />
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <Image
+                    src={image}
+                    alt={`${name}'s profile picture`}
+                    width={80}
+                    height={80}
+                    className="rounded-full border-4 border-white shadow-md"
+                />
             </div>
 
             {/* name and designation */}
@@ -42,22 +48,22 @@ const TeamMember: FC<TeamMemberProps> = ({ name, designation, image, vision, lin
             {/* Socials, TODO: Change links */}
             <div className="flex w-fit mx-auto gap-3 justify-center items-center">
                 {linkedin &&
-                    <a href={linkedin} target="_blank">
+                    <a href={linkedin} target="_blank" rel="noopener noreferrer">
                         <FaLinkedin size={20} className="text-purple-700" />
                     </a>
                 }
                 {/* {instagram &&
-                    <a href={instagram} target="_blank">
+                    <a href={instagram} target="_blank" rel="noopener noreferrer">
                         <FaInstagram size={20} className="text-purple-500" />
                     </a>
                 }
                 {twitter &&
-                    <a href={twitter} target="_blank">
+                    <a href={twitter} target="_blank" rel="noopener noreferrer">
                         <FaX size={20} className="text-purple-500" />
                     </a>
                 } */}
                 {github &&
-                    <a href={github} target="_blank">
+                    <a href={github} target="_blank" rel="noopener noreferrer">
                         <FaGithub size={20} className="text-purple-700" />
                     </a>
                 }
