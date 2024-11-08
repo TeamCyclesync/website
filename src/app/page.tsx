@@ -1,5 +1,6 @@
 import AboutUs from "@/components/landing/AboutUs"
 import AppDisplay from "@/components/landing/AppDisplay"
+import Bento from "@/components/landing/Bento"
 import Footer from "@/components/landing/Footer"
 import HeroSection from "@/components/landing/HeroSection"
 import ScrollPrompt from "@/components/landing/ScrollPrompt"
@@ -18,6 +19,8 @@ const LandingPage = () => {
 
         {/* Mobile app display */}
         <AppDisplay />
+
+        <Bento />
 
         {/* Team Intro / About us  */}
         <AboutUs />
