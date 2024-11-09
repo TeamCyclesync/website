@@ -1,6 +1,7 @@
 import AboutUs from "@/components/landing/AboutUs"
 import AppDisplay from "@/components/landing/AppDisplay"
 import Bento from "@/components/landing/Bento"
+import DownloadCTA from "@/components/landing/DownloadCTA"
 import Footer from "@/components/landing/Footer"
 import HeroSection from "@/components/landing/HeroSection"
 import ScrollPrompt from "@/components/landing/ScrollPrompt"
@@ -24,6 +25,8 @@ const LandingPage = () => {
 
         {/* Team Intro / About us  */}
         <AboutUs />
+
+        <DownloadCTA />
       </main>
       <Footer />
     </div>
