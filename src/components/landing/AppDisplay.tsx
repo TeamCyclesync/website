@@ -46,6 +46,7 @@ const AppDisplay = () => {
                     height={300}
                     alt="mockup"
                     className="mx-auto md:mt-[3rem] mt-[2rem]"
+                    priority
                 />
             </div>
 

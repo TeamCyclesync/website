@@ -5,7 +5,6 @@ import Bento from "@/components/landing/Bento"
 import DownloadCTA from "@/components/landing/DownloadCTA"
 import Footer from "@/components/landing/Footer"
 import HeroSection from "@/components/landing/HeroSection"
-import ScrollPrompt from "@/components/landing/ScrollPrompt"
 import Navigation from "@/components/nav/Navigation"
 
 const LandingPage = () => {
