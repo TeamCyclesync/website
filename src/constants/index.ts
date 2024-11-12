@@ -10,8 +10,8 @@ export const NavLinkList = [
         link: "#services"
     },
     {
-        title: 'About',
-        link: '#about'
+        title: 'Team',
+        link: '#team'
     },
     {
         title: 'Get Started',

@@ -20,6 +20,7 @@ const AppDisplay = () => {
     return (
         <motion.div
             className={cn("max-w-[900px] px-[1rem] mx-auto text-center md:mt-[3rem] flex flex-col relative", isInView ? "pointer-events-none" : '')}
+            id={"services"}
             ref={containerRef}
 
             initial={{

@@ -16,6 +16,7 @@ const AboutUs = () => {
     <motion.div
       className='flex flex-col gap-[5rem] max-w-[850px] px-[1rem] mx-auto text-center mt-[2rem]'
       ref={containerRef}
+      id='team'
 
       initial={{
         opacity: 0,

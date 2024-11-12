@@ -1,5 +1,6 @@
 import AboutUs from "@/components/landing/AboutUs"
 import AppDisplay from "@/components/landing/AppDisplay"
+import BackToTop from "@/components/landing/BackToTop"
 import Bento from "@/components/landing/Bento"
 import DownloadCTA from "@/components/landing/DownloadCTA"
 import Footer from "@/components/landing/Footer"
@@ -10,11 +11,11 @@ import Navigation from "@/components/nav/Navigation"
 const LandingPage = () => {
   return (
     <div className='gradient-bg dotted-grid-mask min-h-screen grid grid-rows-[auto_1fr_auto] relative overflow-x-hidden'>
-      {/* Scroll Prompt */}
-      {/* <ScrollPrompt /> */}
+      {/* Back To Top */}
+      <BackToTop />
 
       <Navigation />
-      <main className="flex flex-col max-sm:gap-[5rem] gap-[2rem]">
+      <main className="flex flex-col max-sm:gap-[5rem] gap-[5rem]">
         {/* Hero Section */}
         <HeroSection />
 
