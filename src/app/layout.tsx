@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     telephone: false
   },
   category: "Health & Fitness",
+  verification: {
+    google: "P_M_8FVsu3FK6y7cYPWw9vnVQBNOSiiMKrK2JOOdiA8"
+  },
 
   openGraph: {
     type: "website",
