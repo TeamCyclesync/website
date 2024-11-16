@@ -1,8 +1,8 @@
 'use client'
 import DesktopNavlinks from "./DesktopNavlinks"
-import MobileNavlinks from "./MobileNavlinks"
+import SideNavigation from "./SideNavigation"
 import { motion } from "framer-motion"
-import { RiHourglass2Line } from "react-icons/ri"
+import { RiHourglassLine } from "react-icons/ri"
 
 const Navigation = () => {
     return (
@@ -10,21 +10,21 @@ const Navigation = () => {
             initial={{ opacity: 0}}
             animate={{ opacity: 1}}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.25}}
-            className="z-[100] md:px-8 px-4 py-3 flex justify-between items-center w-full"
+            className="md:px-8 px-4 py-3 flex justify-between items-center w-full"
         >
             <div className="logo">
-                <span className="text-white text-[20px] flex gap-2 items-center">
-                    <span className="p-1 rounded-full border-2">
-                        <RiHourglass2Line className="text-White"/>
+                <span className="text-white text-[20px] flex gap-1 items-center">
+                    <span className="p-2 rounded-full">
+                        <RiHourglassLine className="text-white text-shadow-100" size={28}/>
                     </span>
-                    <span className="tracking-tighter font-semibold max-md:hidden">Cyclesync</span>
+                    <span className="tracking-tighter text-[25px] font-semibold max-md:hidden">Cyclesync</span>
                 </span>
-
             </div>
+
             {/* Desktop navigation links */}
             <DesktopNavlinks />
             
-            <MobileNavlinks />
+            <SideNavigation />
         </motion.div>
     )
 }

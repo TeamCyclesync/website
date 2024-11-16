@@ -33,10 +33,10 @@ const Bento = () => {
             }}
         >
 
-            <div className="flex flex-col gap-2 max-md:w-full max-w-[850px] mx-auto text-center mb-10">
-                <h1 className="md:text-[2.5rem] sm:text-[2rem] text-[1.5rem] tracking-tighter font-semibold text-white text-shadow-200">Change your Life</h1>
+            <div className="flex flex-col gap-1 max-md:w-full max-w-[850px] mx-auto text-center mb-10">
+                <h1 className="md:text-[2.5rem] sm:text-[2rem] text-[1.5rem] tracking-tighter font-semibold text-white text-shadow-200">Why Choose Us</h1>
                 <p className="md:text-[1rem] mx-auto text-[0.875rem] leading-5 sm:max-md:w-[600px] md:max-w-[650px] text-shadow-200 text-white">
-                    Easily manage your cycle with our intuitive interface. Track symptoms, set reminders, and gain insights into your menstrual health.
+                Track, manage, and understand your menstrual health with ease and confidence.
                 </p>
             </div>
 
@@ -55,7 +55,6 @@ const Bento = () => {
                     {/* Image Background */}
                     <div className='absolute h-[200px] w-[100px] sm:w-full sm:h-full content-none z-[13] max-sm:bottom-[-40%] sm:left-[20%] group-hover:scale-[1.03] sm:group-hover:left-[15%] transition-all duration-300 ease sm:grayscale sm:group-hover:grayscale-0'>
                         <Image 
-                            priority 
                             src={"/assets/bento-hero.png"} 
                             alt='Bento Hero Image' 
                             fill 

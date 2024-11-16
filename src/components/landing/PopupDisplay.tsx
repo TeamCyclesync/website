@@ -13,10 +13,9 @@ export interface PopupDisplayProps {
     label?: string,
     className?: string,
     delayAmount?: number,
-    smallerScreenSupport?: boolean,
 }
 
-const PopupDisplay:FC<PopupDisplayProps> = ({popFrom, triggerView, icon: IconComponent, label, delayAmount, className, smallerScreenSupport}) => {
+const PopupDisplay:FC<PopupDisplayProps> = ({popFrom, triggerView, icon: IconComponent, label, delayAmount, className}) => {
   return (
     <motion.div
         initial={{
@@ -33,10 +32,12 @@ const PopupDisplay:FC<PopupDisplayProps> = ({popFrom, triggerView, icon: IconCom
             }
         }}
 
-        className={cn("rounded-lg text-purple-900 font-medium p-2 sm:py-4 sm:px-6 bg-white absolute shadow-lg z-[120] text-sm flex gap-4 flex-col justify-center items-center", className)}
+        className={cn("rounded-lg text-purple-900 font-medium p-2 sm:py-4 sm:px-6 bg-white absolute shadow-lg z-[120] text-sm flex gap-4 flex-col justify-center items-center max-sm:pt-4", className)}
     >
-        {IconComponent && <IconComponent size={35} className="text-purple-600"/>}
-        <span className="max-w-[100px] leading-4 sm:text-[1rem] text-[0.75rem]">
+        {IconComponent && <span className="p-2 sm:p-2 rounded-full border-[3px] border-purple-600">
+            <IconComponent size={30} className="text-purple-600 max-sm:h-[25px] max-sm:w-[25px]"/>
+        </span>}
+        <span className="w-[90px] sm:w-[100px] md:w-[120px] font-semibold leading-4 sm:text-[1rem] text-[0.75rem]">
             {label}
         </span>
     </motion.div>

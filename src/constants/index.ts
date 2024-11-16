@@ -19,11 +19,11 @@ export const NavLinkList = [
     }
 ]
 
-export const TeamMemberDetails: TeamMemberProps[]= [
+export const TeamMemberDetails: TeamMemberProps[] = [
     {
         name: "Kamatham Soujanya",
         designation: "Founder, Cyclesync",
-        vision: "Cyclesync is our vison and our dream. Our goal is to empower every woman and every household through innovative solutions",
+        vision: "My vision is to create a world where every woman feels empowered to take control of her health through technology and innovation.",
         image: "/assets/placeholder-pfp.png",
         twitter: "www.google.com",
         instagram: "www.google.com",
@@ -33,7 +33,7 @@ export const TeamMemberDetails: TeamMemberProps[]= [
     {
         name: "Devansh Purohit",
         designation: "Co Founder, Cyclesync",
-        vision: "Cyclesync is our vison and our dream. Our goal is to empower every woman and every household through innovative solutions",
+        vision: "I believe in leveraging technology to simplify women's health management and bring meaningful change to their daily lives.",
         image: "/assets/placeholder-pfp.png",
         twitter: "www.google.com",
         instagram: "www.google.com",
@@ -43,7 +43,7 @@ export const TeamMemberDetails: TeamMemberProps[]= [
     {
         name: "Rex Ryan",
         designation: "UI & UX Designer",
-        vision: "Cyclesync is our vison and our dream. Our goal is to empower every woman and every household through innovative solutions",
+        vision: "Design is more than aesthetics—it's about creating an intuitive and seamless experience that empowers users every step of the way.",
         image: "/assets/placeholder-pfp.png",
         twitter: "www.google.com",
         instagram: "www.google.com",
@@ -53,11 +53,11 @@ export const TeamMemberDetails: TeamMemberProps[]= [
     {
         name: "Jaspreet Kaur",
         designation: "Research Lead",
-        vision: "Cyclesync is our vison and our dream. Our goal is to empower every woman and every household through innovative solutions",
+        vision: "My goal is to bridge the gap between innovation and real-world impact through thorough research and understanding of user needs.",
         image: "/assets/placeholder-pfp.png",
         twitter: "www.google.com",
         instagram: "www.google.com",
         github: "www.google.com",
         linkedin: "www.google.com"
     }
-]
+];

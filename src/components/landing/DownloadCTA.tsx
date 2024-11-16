@@ -1,25 +1,9 @@
 'use client'
 import Image from "next/image"
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
 
 const DownloadCTA = () => {
-    const containerRef = useRef(null);
-    const isInView = useInView(containerRef, {
-        amount: 0.5,
-        once: true
-    });
-
     return (
-        <motion.div className="max-w-[800px] mx-auto px-[1rem] relative mt-12" ref={containerRef}
-            initial={{
-                opacity: 0,
-                translateY: "20px"
-            }}
-            animate={{
-                opacity: isInView ? 1 : 0,
-                translateY: isInView ? 0 : "20px"
-            }}
+        <div className="max-w-[800px] mx-auto px-[1rem] relative mt-12"
             id="get-started"
         >
             <div className="flex gap-2 sm:flex-row flex-col items-center text-center">
@@ -67,7 +51,7 @@ const DownloadCTA = () => {
                     </div>
                 </div>
             </div>
-        </motion.div>
+        </div>
     )
 }
 

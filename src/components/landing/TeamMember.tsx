@@ -20,13 +20,13 @@ const TeamMember: FC<TeamMemberProps> = ({ name, designation, image, vision, lin
     return (
         <div className="relative bg-white shadow-lg hover:shadow-xl hover:scale-105 px-8 pt-[3rem] md:pt-[3.5rem] pb-4 rounded-xl transition-all duration-300 ease-in-out flex flex-col gap-4">
             {/* Team member pfp */}
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute max-sm:h-[70px] max-sm:w-[70px] top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <Image
                     src={image}
                     alt={`${name}'s profile picture`}
                     width={80}
                     height={80}
-                    className="rounded-full border-4 border-white shadow-md"
+                    className="rounded-full border-4 border-white shadow-md object-cover"
                 />
             </div>
 

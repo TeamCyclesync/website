@@ -8,6 +8,10 @@ import { useRef } from "react";
 import { cn } from "@/lib/utils";
 import PopupDisplay from "./PopupDisplay";
 import { RiAccountCircleLine } from "react-icons/ri";
+import { RiHourglassFill } from "react-icons/ri";
+import { BiBrain } from "react-icons/bi";
+import { MdConnectWithoutContact } from "react-icons/md";
+import { FaNutritionix } from "react-icons/fa6";
 
 
 const AppDisplay = () => {
@@ -51,36 +55,36 @@ const AppDisplay = () => {
             </div>
 
             <PopupDisplay 
-                icon={RiAccountCircleLine}
-                label={'Personalized Experience'}
+                icon={RiHourglassFill}
+                label={'Cycle Tracking'}
                 popFrom={'left'}
                 delayAmount={0.5}
                 triggerView={isInView}
-                className="top-[35%] lg:left-[-10%] max-xsm:hidden"
+                className="top-[35%] lg:left-[-10%] shadow-2xl tracking-tighter"
             />
             <PopupDisplay 
-                icon={RiAccountCircleLine}
-                label={'Personalized Experience'}
+                icon={BiBrain}
+                label={'AI Insights'}
                 popFrom={'left'}
                 delayAmount={0.75}
                 triggerView={isInView}
-                className="top-[70%] xsm:top-[60%] lg:left-[-10%]"
+                className="top-[70%] xsm:top-[60%] lg:left-[-10%] shadow-2xl tracking-tighter mt-4"
             />
             <PopupDisplay 
-                icon={RiAccountCircleLine}
-                label={'Personalized Experience'}
+                icon={MdConnectWithoutContact}
+                label={'Partner Connect'}
                 popFrom={'right'}
                 delayAmount={0.5}
                 triggerView={isInView}
-                className="top-[30%] xsm:top-[35%] right-[2.5%] lg:right-[-10%]"
+                className="top-[30%] xsm:top-[35%] right-[2.5%] lg:right-[-10%] shadow-2xl tracking-tighter"
             />
             <PopupDisplay 
-                icon={RiAccountCircleLine}
-                label={'Personalized Experience'}
+                icon={FaNutritionix}
+                label={'Nutrition Plans'}
                 popFrom={'right'}
                 delayAmount={0.75}
                 triggerView={isInView}
-                className="top-[60%] right-[2.5%] lg:right-[-10%] max-xsm:hidden"
+                className="top-[60%] right-[2.5%] lg:right-[-10%] shadow-2xl tracking-tighter mt-4"
             />
 
         </motion.div>
