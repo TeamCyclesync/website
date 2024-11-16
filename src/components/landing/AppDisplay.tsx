@@ -7,7 +7,6 @@ import {
 import { useRef } from "react";
 import { cn } from "@/lib/utils";
 import PopupDisplay from "./PopupDisplay";
-import { RiAccountCircleLine } from "react-icons/ri";
 import { RiHourglassFill } from "react-icons/ri";
 import { BiBrain } from "react-icons/bi";
 import { MdConnectWithoutContact } from "react-icons/md";
