@@ -43,7 +43,7 @@ const Bento = () => {
             <div className='max-w-[850px] mx-auto grid max-sm:grid-cols-2 max-sm:grid-rows-4 grid-cols-3 grid-rows-3 gap-x-4 gap-y-4'>
 
                 {/* Hero Section */}
-                <div className='bg-purple-400 sm:bg-gradient-to-b from-pink-300 via-yellow-300 to-amber-300 max-sm:col-span-2 max-sm:row-start-1 max-sm:max-h-[160px] sm:row-span-3 sm:h-[480px] p-4 fully-centered rounded-xl shadow-xl relative overflow-hidden group hover:scale-[1.02] shadow-xl hover:shadow-2xl transition-all duration-300 ease'>
+                <div className='bg-purple-400 sm:bg-gradient-to-b from-pink-300 via-yellow-300 to-amber-300 max-sm:col-span-2 max-sm:row-start-1 max-sm:max-h-[160px] sm:row-span-3 sm:h-[480px] p-4 fully-centered rounded-xl relative overflow-hidden group hover:scale-[1.02] shadow-xl hover:shadow-2xl transition-all duration-300 ease'>
                     {/* Card Icon */}
                     <div className='absolute left-[2%] sm:left-[6%] top-[10%] sm:top-[4%] rounded-full border-[3px] border-white z-[13] p-2 max-xsm:hidden'>
                         <FaHandFist size={20} className='text-white' />
@@ -54,7 +54,14 @@ const Bento = () => {
 
                     {/* Image Background */}
                     <div className='absolute h-[200px] w-[100px] sm:w-full sm:h-full content-none z-[13] max-sm:bottom-[-40%] sm:left-[20%] group-hover:scale-[1.03] sm:group-hover:left-[15%] transition-all duration-300 ease sm:grayscale sm:group-hover:grayscale-0'>
-                        <Image src={"/assets/bento-hero.png"} alt='Bento Hero Image' fill className='object-cover rounded-lg' />
+                        <Image 
+                            priority 
+                            src={"/assets/bento-hero.png"} 
+                            alt='Bento Hero Image' 
+                            fill 
+                            className='object-cover rounded-lg' 
+                            sizes='(max-width: 640px) 100px, 100%'
+                        />
                     </div>
 
                     <div className='max-sm:text-center max-sm:px-4 z-[13] text-white absolute sm:bottom-[-12%] sm:left-6 sm:group-hover:bottom-[5%] transition-all duration-500 ease-in-out'>
@@ -84,7 +91,7 @@ const Bento = () => {
                 <div className='max-sm:col-span-1 fully-centered rounded-xl hover:scale-[1.03] duration-300 transition-scale ease-in-out bg-emerald-100 relative overflow-hidden group'>
 
                     <div className='absolute h-[160px] w-[150px] left-[8%] grayscale group-hover:scale-[1.05] group-hover:grayscale-0 group-hover:left-[5%] transition-all duration-300 ease'>
-                        <Image src={"/assets/smiling.png"} alt='Happy Independant Woman' width={500} height={800} />
+                        <Image priority src={"/assets/smiling.png"} alt='Happy Independant Woman' width={500} height={800} />
                     </div>
                 </div>
 
@@ -95,10 +102,10 @@ const Bento = () => {
 
                     {/* Image */}
                     <div className='absolute md:h-[250px] h-[200px] w-[200px] md:w-[250px] left-[-8%] bottom-[-35%] group-hover:left-[-5%] transition-all dutation-300 ease grayscale group-hover:grayscale-0 group-hover:scale-[1.03]'>
-                        <Image src={"/assets/running.png"} alt='Women running' height={500} width={600} className='object-cover h-full w-full' />
+                        <Image priority src={"/assets/running.png"} alt='Women running' height={500} width={600} className='object-cover h-full w-full' />
                     </div>
 
-                    <h3 className='text-[1.5rem] md:text-[2rem] text-white font-bold tracking-tighter text-right leading-7 text-shadow-200 absolute right-[5%] bottom-[35%] leading-[15px]'>
+                    <h3 className='text-[1.5rem] md:text-[2rem] text-white font-bold tracking-tighter text-right text-shadow-200 absolute right-[5%] bottom-[35%] leading-[15px]'>
                         Work with your Biology
                     </h3>
                     <p className='absolute bottom-[10%] right-[5%] text-violet-700 tracking-tight font-bold text-[0.875rem] md:text-[1rem] uppercase'>
@@ -110,7 +117,7 @@ const Bento = () => {
                 <div className='max-sm:col-span-2 col-span-2 fully-centered rounded-xl bg-purple-300 relative overflow-hidden group hover:scale-[1.03] transition-all duration-300 ease'>
 
                     <div className='absolute max-sm:w-[100px] max-sm:h-[150px] w-[150px] h-[200px] bottom-[-15%] left-[-2%] xsm:left-[3%] group-hover:left-[5%] transition-all duration-300 ease grayscale group-hover:grayscale-0 group-hover:scale-[1.03]'>
-                        <Image src={"/assets/track.png"} alt='Tracking Cycle' width={150} height={200} className='object-contain' />
+                        <Image priority src={"/assets/track.png"} alt='Tracking Cycle' width={150} height={200} className='object-contain' />
                     </div>
 
                     <div className='flex flex-col gap-1 absolute right-[5%] top-[15%] text-right'>

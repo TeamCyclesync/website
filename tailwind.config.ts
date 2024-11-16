@@ -16,7 +16,8 @@ const config: Config = {
 			"120%": "120%"
 		},
 		screens: {
-			'xsm': '500px'
+			'xsm': '500px',
+			'xxsm': '350px',
 		},
   		colors: {
   			background: 'hsl(var(--background))',
