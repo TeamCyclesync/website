@@ -8,7 +8,7 @@ type Page = {
 
 function generateSiteMap() {
   // Base URL of your website
-  const baseUrl = 'https://cyclesync.com'
+  const baseUrl = 'https://cyclesync.in'
 
   // Main sections of your landing page
   const sections = [
