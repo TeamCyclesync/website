@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   authors: [{name: "Lakshdeep Singh", url: "https://www.linkedin.com/in/lakshdeepsingh2003"}, {name: "Kamatham Soujanya", url: "https://www.linkedin.com/in/kamatham-soujanya-linkdin"}],
   creator: "Cylesync Team",
   publisher: "Cyclesync",
+  metadataBase: new URL('https://www.cyclesync.in'),
   formatDetection: {
     email: false,
     address: false,
