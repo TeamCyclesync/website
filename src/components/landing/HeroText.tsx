@@ -15,7 +15,7 @@ const HeroText = () => {
             className='md:max-w-[1200px] md:mx-auto max-sm:px-[1rem] sm:px-[3rem] text-center flex flex-col gap-8 z-[10]'
         >
             <div className='flex flex-col gap-8'>
-                <h2 className='max-sm:leading-[35px] max-sm:text-[30px] max-sm:max-w-[450px] sm:max-w-[500px] sm:leading-[50px] sm:text-[40px] md:text-[65px] tracking-tighter font-bold text-white drop-shadow-2xl md:leading-[60px] md:max-w-[800px] mx-auto [text-shadow:_0_1px_8px_rgb(0_0_0_/_30%)] '>Empower Your Health Journey with Cycle Insights</h2>
+                <h1 className='max-sm:leading-[35px] max-sm:text-[30px] max-sm:max-w-[450px] sm:max-w-[500px] sm:leading-[50px] sm:text-[40px] md:text-[65px] tracking-tighter font-bold text-white drop-shadow-2xl md:leading-[60px] md:max-w-[800px] mx-auto [text-shadow:_0_1px_8px_rgb(0_0_0_/_30%)] '>Empower Your Health Journey with Cycle Insights</h1>
                 <p className='[text-shadow:_0_1px_8px_rgb(0_0_0_/_40%)] text-white max-md:max-w-[500px] max-w-[620px] mx-auto leading-5'>Track your menstrual cycle, sync wellness tips, and unlock personalized insights that align with your body’s natural rhythm.</p>
             </div>
 
