@@ -38,6 +38,12 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "Cyclesync - Women's Health & Wellness Platform"
+      },
+      {
+        url: "/assets/ogimg-sq.png",
+        width: 256,
+        height: 256,
+        alt: "Cyclesync - Women's Health & Wellness Platform"
       }
     ]
   }
