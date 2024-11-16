@@ -34,7 +34,7 @@ const Bento = () => {
         >
 
             <div className="flex flex-col gap-1 max-md:w-full max-w-[850px] mx-auto text-center mb-10">
-                <h1 className="md:text-[2.5rem] sm:text-[2rem] text-[1.5rem] tracking-tighter font-semibold text-white text-shadow-200">Why Choose Us</h1>
+                <h2 className="md:text-[2.5rem] sm:text-[2rem] text-[1.5rem] tracking-tighter font-semibold text-white text-shadow-200">Why Choose Us</h2>
                 <p className="md:text-[1rem] mx-auto text-[0.875rem] leading-5 sm:max-md:w-[600px] md:max-w-[650px] text-shadow-200 text-white">
                 Track, manage, and understand your menstrual health with ease and confidence.
                 </p>

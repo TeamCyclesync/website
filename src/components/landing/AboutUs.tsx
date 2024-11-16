@@ -29,7 +29,7 @@ const AboutUs = () => {
     >
 
       <div className="flex flex-col gap-2 max-md:w-full">
-        <h1 className="md:text-[2.5rem] sm:text-[2rem] text-[1.5rem] tracking-tighter font-semibold text-white text-shadow-100">Meet Our Team</h1>
+        <h2 className="md:text-[2.5rem] sm:text-[2rem] text-[1.5rem] tracking-tighter font-semibold text-white text-shadow-100">Meet Our Team</h2>
         <p className="md:text-[1rem] text-[0.875rem] leading-5 sm:max-md:w-[600px] md:max-w-[650px] text-shadow-100 text-white mx-auto">
           Behind our intuitive tools is a passionate team dedicated to helping you track your cycle, set reminders, and gain deeper insights into your menstrual health.
         </p>

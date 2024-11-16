@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     default: "Cyclesync - Feel Better, Work Smarter, Live Healthier",
     template: "%s | Cyclesync"
   },
-  description: "Cyclesync empowers women to track their menstrual cycles, gain AI-driven insights, explore personalized nutrition and fitness routines, and improve period management for a healthier, smarter, and balanced lifestyle.",
+  description: "Cyclesync helps women track menstrual cycles, gain AI insights, and explore personalized fitness and nutrition for smarter period management",
   keywords:"menstual cycle tracker, women's health app, period tracker, nutrition, fitness, AI insights, lifestyle, cyclesync",
   authors: [{name: "Lakshdeep Singh", url: "https://www.linkedin.com/in/lakshdeepsingh2003"}, {name: "Kamatham Soujanya", url: "https://www.linkedin.com/in/kamatham-soujanya-linkdin"}],
   creator: "Cylesync Team",
@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   category: "Health & Fitness",
   verification: {
     google: "P_M_8FVsu3FK6y7cYPWw9vnVQBNOSiiMKrK2JOOdiA8"
+  },
+  alternates: {
+    canonical: "https://www.cyclesync.in/"
   },
 
   openGraph: {
