@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en-US",
-    url: "https://cyclesync.in",
+    url: "https://www.cyclesync.in",
     title: "Cyclesync - AI-Powered Menstrual Cycle Tracking & Wellness",
     description: "Transform your health with personalized period tracking, AI insights, and wellness recommendations tailored to your cycle.",
     siteName: "Cyclesync",
