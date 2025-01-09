@@ -36,8 +36,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, designation, vision, imag
           twitter={twitter}
           instagram={instagram}
           github={github}
-          linkedin={linkedin}
-        />
+          linkedin={linkedin} image={''}        />
       )}
     </div>
   );
