@@ -11,6 +11,16 @@ html {
   scroll-padding-top: 3rem;
 }
 
+/* globals.css */
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-play {
+  font-family: 'Play', sans-serif;
+}
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;

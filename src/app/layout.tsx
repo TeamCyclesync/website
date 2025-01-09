@@ -1,8 +1,16 @@
 import type { Metadata, Viewport} from "next";
-import { Inter } from "next/font/google"
+import { Play, Roboto } from "next/font/google"
 import "./globals.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const play = Play({
+  subsets: ['latin'],
+  weight: "400"
+});
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"], // Use the weights needed
+  variable: "--font-roboto", // Define a CSS variable for easier usage
+});
 
 export const metadata: Metadata = {
   title: {
@@ -67,9 +75,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body
-        className={`${inter.className} antialiased overflow-x-hidden`}
+        className={`${roboto.className}  ${play.className} antialiased overflow-x-hidden`}
       >
         {children}
       </body>

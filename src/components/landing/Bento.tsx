@@ -7,6 +7,8 @@ import { IoHourglassOutline } from "react-icons/io5";
 import { Button } from '../ui/button';
 import { FiDownload } from "react-icons/fi";
 import { FaCalendarCheck } from "react-icons/fa6";
+import { RiMentalHealthLine } from "react-icons/ri";
+
 import {
     motion,
     useInView
@@ -53,7 +55,7 @@ const Bento = () => {
                     <div className='max-sm:hidden image-overlay group-hover:image-overlay-dark top-[25rem] group-hover:top-[12rem] transition-all duration-300 ease delay-250' />
 
                     {/* Image Background */}
-                    <div className='absolute h-[200px] w-[100px] sm:w-full sm:h-full content-none z-[13] max-sm:bottom-[-40%] sm:left-[20%] group-hover:scale-[1.03] sm:group-hover:left-[15%] transition-all duration-300 ease sm:grayscale sm:group-hover:grayscale-0'>
+                    <div className='absolute h-[180px] w-[100px] sm:w-full sm:h-full content-none z-[13] max-sm:bottom-[-40%] sm:left-[20%] right-[1%] group-hover:scale-[1.03] sm:group-hover:left-[15%] group-hover:right-[5%] transition-all duration-300 ease sm:grayscale sm:group-hover:grayscale-0'>
                         <Image 
                             src={"/assets/bento-hero.png"} 
                             alt='Bento Hero Image' 
@@ -65,8 +67,8 @@ const Bento = () => {
 
                     <div className='max-sm:text-center max-sm:px-4 z-[13] text-white absolute sm:bottom-[-12%] sm:left-6 sm:group-hover:bottom-[5%] transition-all duration-500 ease-in-out'>
                         <div className='flex flex-col sm:gap-2 sm:max-w-[200px] max-sm:w-full'>
-                            <span className='text-amber-300 sm:text-purple-500 font-bold tracking-tighter uppercase text-shadow-200 text-[1rem]'>Feel</span>
-                            <h3 className='text-[1.8rem] md:text-[2.25rem] max-sm:mb-4 text-white text-shadow-200 tracking-tighter font-semibold leading-6 mb-2'>
+                            <span className='text-amber-300 sm:text-purple-500 font-bold tracking-wide uppercase text-shadow-200 text-[1.4rem]'>Feel</span>
+                            <h3 className='text-[1.8rem] md:text-[2.25rem] max-sm:mb-4 text-white text-shadow-200 tracking-tight font-semibold leading-6 mb-8'>
                                 Empowered
                             </h3>
                             <p className='text-sm text-shadow-200 max-sm:hidden'>
@@ -88,8 +90,11 @@ const Bento = () => {
 
                 {/* Sub Section 2 */}
                 <div className='max-sm:col-span-1 fully-centered rounded-xl hover:scale-[1.03] duration-300 transition-scale ease-in-out bg-emerald-100 relative overflow-hidden group'>
-
-                    <div className='absolute h-[160px] w-[150px] left-[8%] grayscale group-hover:scale-[1.05] group-hover:grayscale-0 group-hover:left-[5%] transition-all duration-300 ease'>
+                <RiMentalHealthLine  className='absolute text-pink-700 opacity-70 md:right-[15%] right-[0%] group-hover:scale-[1.08] transition-all duration-300 ease' size={50} />
+                <h3 className='hidden md:block md:text-[1.1rem] text-purple-950 font-bold tracking-tighter text-right text-shadow-200 absolute right-[5%] bottom-[15%] leading-[15px]'>
+                Love Yourself
+                    </h3>
+                    <div className='absolute h-[120px] w-[120px] md:h-[200px] md:w-[180px] left-[0%] grayscale group-hover:scale-[1.05] group-hover:grayscale-0 group-hover:left-[5%] transition-all duration-300 ease'>
                         <Image priority src={"/assets/smiling.png"} alt='Happy Independant Woman' width={500} height={800} />
                     </div>
                 </div>
@@ -100,7 +105,7 @@ const Bento = () => {
                     <GiDna2 className='absolute text-white/20 -right-[5%] group-hover:scale-[1.08] transition-all duration-300 ease' size={260} />
 
                     {/* Image */}
-                    <div className='absolute md:h-[250px] h-[200px] w-[200px] md:w-[250px] left-[-8%] bottom-[-35%] group-hover:left-[-5%] transition-all dutation-300 ease grayscale group-hover:grayscale-0 group-hover:scale-[1.03]'>
+                    <div className='absolute md:h-[210px] h-[160px] w-[200px] md:w-[250px] left-[-4%] bottom-[-35%] group-hover:left-[-5%] transition-all dutation-300 ease grayscale group-hover:grayscale-0 group-hover:scale-[1.03]'>
                         <Image priority src={"/assets/running.png"} alt='Women running' height={500} width={600} className='object-cover h-full w-full' />
                     </div>
 

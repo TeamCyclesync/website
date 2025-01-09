@@ -24,7 +24,7 @@ const LandingPage = () => {
         <Bento />
 
         {/* Team Intro / About us  */}
-        <AboutUs />
+        {/* <AboutUs /> */}
 
         <DownloadCTA />
       </main>

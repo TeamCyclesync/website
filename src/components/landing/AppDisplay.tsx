@@ -22,7 +22,7 @@ const AppDisplay = () => {
 
     return (
         <motion.div
-            className={cn("max-w-[900px] px-[1rem] mx-auto text-center md:mt-[3rem] flex flex-col relative", isInView ? "pointer-events-none" : '')}
+            className={cn("max-w-[900px] px-[1rem] mx-auto text-center  flex flex-col relative", isInView ? "pointer-events-none" : '')}
             id={"services"}
             ref={containerRef}
 
@@ -37,7 +37,7 @@ const AppDisplay = () => {
         >
             <div className="flex flex-col gap-2 max-md:w-full">
                 <h2 className="md:text-[2.5rem] sm:text-[2rem] text-[1.5rem] tracking-tighter font-semibold text-white text-shadow-100">Feel the Advantage</h2>
-                <p className="md:text-[1rem] text-[0.875rem] leading-5 sm:max-md:w-[600px] md:max-w-[650px] text-shadow-100 text-white">
+                <p className="md:text-[1rem] text-[0.875rem] leading-5 sm:max-md:w-[600px] md:max-w-[650px] text-shadow-100 text-white font-play">
                     Easily manage your cycle with our intuitive interface. Track symptoms, set reminders, and gain insights into your menstrual health.
                 </p>
             </div>
@@ -53,41 +53,79 @@ const AppDisplay = () => {
                 />
             </div>
 
-            <PopupDisplay 
-                icon={RiHourglassFill}
-                label={'Cycle Tracking'}
-                popFrom={'left'}
-                delayAmount={0.5}
-                triggerView={isInView}
-                className="top-[35%] lg:left-[-10%] shadow-2xl tracking-tighter"
-            />
-            <PopupDisplay 
-                icon={BiBrain}
-                label={'AI Insights'}
-                popFrom={'left'}
-                delayAmount={0.75}
-                triggerView={isInView}
-                className="top-[70%] xsm:top-[60%] lg:left-[-10%] shadow-2xl tracking-tighter mt-4"
-            />
-            <PopupDisplay 
-                icon={MdConnectWithoutContact}
-                label={'Partner Connect'}
-                popFrom={'right'}
-                delayAmount={0.5}
-                triggerView={isInView}
-                className="top-[30%] xsm:top-[35%] right-[2.5%] lg:right-[-10%] shadow-2xl tracking-tighter"
-            />
-            <PopupDisplay 
-                icon={FaNutritionix}
-                label={'Nutrition Plans'}
-                popFrom={'right'}
-                delayAmount={0.75}
-                triggerView={isInView}
-                className="top-[60%] right-[2.5%] lg:right-[-10%] shadow-2xl tracking-tighter mt-4"
-            />
+            {/* Popup displays for devices above md */}
+            <div className="hidden md:block">
+                <PopupDisplay
+                    icon={RiHourglassFill}
+                    label={'Cycle Tracking'}
+                    popFrom={'left'}
+                    delayAmount={0.5}
+                    triggerView={isInView}
+                    className="top-[35%] lg:left-[-10%] shadow-2xl tracking-tighter"
+                />
+                <PopupDisplay 
+                    icon={BiBrain}
+                    label={'AI Insights'}
+                    popFrom={'left'}
+                    delayAmount={0.75}
+                    triggerView={isInView}
+                    className="top-[70%] xsm:top-[60%] lg:left-[-0%] shadow-2xl tracking-tighter mt-4"
+                />
+                <PopupDisplay 
+                    icon={MdConnectWithoutContact}
+                    label={'Partner Connect'}
+                    popFrom={'right'}
+                    delayAmount={0.5}
+                    triggerView={isInView}
+                    className="top-[30%] xsm:top-[35%] right-[2.5%] lg:right-[-10%] shadow-2xl tracking-tighter"
+                />
+                <PopupDisplay 
+                    icon={FaNutritionix}
+                    label={'Nutrition Plans'}
+                    popFrom={'right'}
+                    delayAmount={0.75}
+                    triggerView={isInView}
+                    className="top-[60%] right-[4.5%] lg:right-[-0%] shadow-2xl tracking-tighter mt-4"
+                />
+            </div>
 
+            {/* Popup displays for devices below md */}
+            <div className="block md:hidden mt-4 mb-72">
+                <PopupDisplay
+                    icon={RiHourglassFill}
+                    label={'Cycle Tracking'}
+                    popFrom={'left'}
+                    delayAmount={0.5}
+                    triggerView={isInView}
+                    className="shadow-2xl tracking-tighter mt-4 left-[18%]"
+                />
+                <PopupDisplay 
+                    icon={BiBrain}
+                    label={'AI Insights'}
+                    popFrom={'left'}
+                    delayAmount={0.75}
+                    triggerView={isInView}
+                    className="shadow-2xl tracking-tighter mt-40 left-[18%]"
+                />
+                <PopupDisplay 
+                    icon={MdConnectWithoutContact}
+                    label={'Partner Connect'}
+                    popFrom={'right'}
+                    delayAmount={0.5}
+                    triggerView={isInView}
+                    className="shadow-2xl tracking-tighter mt-20 right-[18%]"
+                />
+                <PopupDisplay 
+                    icon={FaNutritionix}
+                    label={'Nutrition Plans'}
+                    popFrom={'right'}
+                    delayAmount={0.75}
+                    triggerView={isInView}
+                    className="shadow-2xl tracking-tighter mt-56 right-[18%]"
+                />
+            </div>
         </motion.div>
     )
 }
 
-export default AppDisplay
+export default AppDisplay;

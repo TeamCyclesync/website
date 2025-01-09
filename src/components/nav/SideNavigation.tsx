@@ -1,8 +1,8 @@
 'use client'
-
 import { useState } from 'react'
 import Link from 'next/link'
 import { RiAppsLine, RiHourglassLine } from 'react-icons/ri'
+import Image from 'next/image'
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet'
 
 export const NavLinkList = [
@@ -15,13 +15,9 @@ export const NavLinkList = [
     link: "#services"
   },
   {
-    title: 'Team',
-    link: '#team'
-  },
-  {
     title: 'Get Started',
     link: "#get-started"
-  }
+  },
 ]
 
 const SideNavigation = () => {
@@ -76,8 +72,15 @@ const SideNavigation = () => {
           </nav>
           <div className="flex flex-col space-y-4 pb-8">
             <span className='flex items-center space-x-4'>
-              <div className="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center">
-                <RiHourglassLine size={25} />
+              <div className="w-12 h-12 text-white rounded-full flex items-center justify-center">
+        <Image 
+                                            src="/assets/logo.png" 
+                                            alt="Cyclesync Logo"
+                                            width={50} 
+                                            height={50} 
+                                            className="text-shadow-100" 
+                                        />
+                                    
               </div>
               <span className="text-3xl text-neutral-800 tracking-tighter font-[800]">Cyclesync</span>
             </span>
