@@ -23,13 +23,13 @@ const HeroText = () => {
 
             <div className='flex max-sm:flex-col max-sm:w-full max-md:max-w-[370px] gap-4 mx-auto'>
                 <Link href={"/"} className='hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.15)] transition-all duration-300 ease-out'>
-                    <Button variant={'outline'} className='font-[500] w-3/4 md:w-100% hover:scale-105 transition-all duration-300 ease-out' size={'lg'}>
+                    <Button variant={'outline'} className='font-[500] w-3/4 md:w-max hover:scale-105 transition-all duration-300 ease-out' size={'lg'}>
                         Explore
                         <VscMapVertical size={32} />
                     </Button>
                 </Link>
-                <Link href={"#get-started"} className='hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.15)] transition-all duration-300 ease-out'>
-                    <Button className='text-fuchsia-100 w-3/7 md:w-100% hover:scale-105 transition-all duration-300 ease-out border border-white/20' size={'lg'}>
+                <Link href={"/"} className='hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.15)] transition-all duration-300 ease-out'>
+                    <Button className='text-fuchsia-100 md:w-max w-3/5 hover:scale-105 transition-all duration-300 ease-out border border-white/20' size={'lg'}>
                         Download the App
                         <BiLogoPlayStore/><FaAppStore/>
                     </Button>
