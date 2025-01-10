@@ -6,10 +6,6 @@ export const NavLinkList = [
     link: '/',
   },
   {
-    title: "Services",
-    link: "#services"
-  },
-  {
     title: 'Team',
     link: '/team'
   },

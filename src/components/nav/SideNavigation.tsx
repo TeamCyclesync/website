@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
-import { RiAppsLine, RiHourglassLine } from 'react-icons/ri'
+import { RiAppsLine } from 'react-icons/ri'
 import Image from 'next/image'
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet'
 
@@ -11,8 +11,8 @@ export const NavLinkList = [
     link: '/',
   },
   {
-    title: "Services",
-    link: "#services"
+    title: 'Team',
+    link: '/team',
   },
   {
     title: 'Get Started',
@@ -23,23 +23,8 @@ export const NavLinkList = [
 const SideNavigation = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
+  const handleLinkClick = () => {
     setIsOpen(false);
-
-    // Use setTimeout to ensure the sheet is closed before scrolling
-    setTimeout(() => {
-      if (href === '/') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        const element = document.querySelector(href);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
-      // Update the URL without causing a page reload
-      window.history.pushState({}, '', href);
-    }, 300);
   };
 
   return (
@@ -62,7 +47,7 @@ const SideNavigation = () => {
                   <Link
                     href={item.link}
                     className="text-lg tracking-tighter font-medium w-full block py-2 px-4 rounded-md transition-all duration-200 ease-in-out hover:bg-purple-500/10 hover:scale-[1.02]"
-                    onClick={(e) => handleLinkClick(e, item.link)}
+                    onClick={handleLinkClick}
                   >
                     {item.title}
                   </Link>
@@ -73,14 +58,13 @@ const SideNavigation = () => {
           <div className="flex flex-col space-y-4 pb-8">
             <span className='flex items-center space-x-4'>
               <div className="w-12 h-12 text-white rounded-full flex items-center justify-center">
-        <Image 
-                                            src="/assets/logo.png" 
-                                            alt="Cyclesync Logo"
-                                            width={50} 
-                                            height={50} 
-                                            className="text-shadow-100" 
-                                        />
-                                    
+                <Image 
+                  src="/assets/logo.png" 
+                  alt="Cyclesync Logo"
+                  width={50} 
+                  height={50} 
+                  className="text-shadow-100" 
+                />
               </div>
               <span className="text-3xl text-neutral-800 tracking-tighter font-[800]">Cyclesync</span>
             </span>

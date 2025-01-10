@@ -13,7 +13,6 @@ function generateSiteMap() {
   // Main sections of your landing page
   const sections = [
     'hero',
-    'services',
     'team',
     'get-started',
   ]
