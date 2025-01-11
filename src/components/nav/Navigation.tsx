@@ -17,12 +17,12 @@ const Navigation = () => {
                     <span className="p-2 rounded-full">                        <Image 
                             src="/assets/logo.png" 
                             alt="Cyclesync Logo"
-                            width={44} 
-                            height={40} 
+                            width={40} 
+                            height={0} 
                             className="text-shadow-100" 
                         />
                     </span>
-                    <span className="tracking-wide text-md font-medium max-md:hidden">Cyclesync</span>
+                    <span className="tracking-widest text-md font-medium max-md:hidden font-catamaran">Cyclesync</span>
                 </span>
             </div>
 

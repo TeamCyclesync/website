@@ -19,8 +19,18 @@ html {
 .font-play {
   font-family: 'Play', sans-serif;
 }
-
-
+.font-cat {
+  font-family: 'Catamaran', serif;
+}
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+.font-anton {
+  font-family: 'Anton', sans-serif;
+}
+.font-catamaran{
+  font-family: 'Catamaran', sans-serif;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;

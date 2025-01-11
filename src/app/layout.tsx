@@ -1,15 +1,31 @@
-import type { Metadata, Viewport} from "next";
-import { Play, Roboto } from "next/font/google"
+import type { Metadata, Viewport } from "next";
+import { Play, Roboto, Catamaran, Poppins, Anton } from "next/font/google"; // Import Six Caps
 import "./globals.css";
 
+// Import and configure the fonts
 const play = Play({
-  subsets: ['latin'],
-  weight: "400"
+  subsets: ["latin"],
+  weight: "400",
 });
+
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "500", "700"], // Use the weights needed
-  variable: "--font-roboto", // Define a CSS variable for easier usage
+  weight: ["400", "500", "700"],
+});
+
+const catamaran = Catamaran({
+  subsets: ["latin"],
+  weight: "800",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const anton = Anton({
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {

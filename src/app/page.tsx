@@ -13,7 +13,7 @@ const LandingPage = () => {
       <BackToTop />
 
       <Navigation />
-      <main className="flex flex-col max-sm:gap-[5rem] gap-[5rem]">
+      <main className="flex flex-col max-sm:gap-[5rem] gap-[1rem]">
         {/* Hero Section */}
         <HeroSection />
 

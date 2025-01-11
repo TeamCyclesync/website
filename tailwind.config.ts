@@ -65,7 +65,11 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		letterSpacing: {
+			"extra-widest": "0.5em",
+			"super-widest": "1em",   
+		},
   	}
   },
   plugins: [require("tailwindcss-animate")],

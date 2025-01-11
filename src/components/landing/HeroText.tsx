@@ -17,8 +17,8 @@ const HeroText = () => {
             className='md:max-w-[1200px] md:mx-auto max-sm:px-[1rem] sm:px-[3rem] text-center flex flex-col gap-8 z-[10]'
         >
             <div className='flex flex-col gap-8'>
-                <h1 className='leading-tight max-sm:text-[30px] max-sm:max-w-[450px] sm:max-w-[500px] sm:text-[40px] md:text-[65px] font-bold text-white drop-shadow-2xl md:max-w-[800px] mx-auto [text-shadow:_0_1px_8px_rgb(0_0_0_/_30%)] '>Ditch your pms rollercoaster and ride your cycle smoothly</h1>
-                <p className='[text-shadow:_0_1px_8px_rgb(0_0_0_/_40%)] text-xs md:text-lg text-white max-md:max-w-[500px] max-w-[620px] mx-auto leading-5 font-play'>Track your menstrual cycle, sync wellness tips, and unlock personalized insights that align with your body’s natural rhythm.</p>
+                <h1 className='font-anton tracking-wide leading-tight max-sm:text-[30px] max-sm:max-w-[450px] sm:max-w-[500px] sm:text-[40px] md:text-[65px] text-white drop-shadow-2xl md:max-w-[800px] mx-auto [text-shadow:_0_1px_8px_rgb(0_0_0_/_30%)] '>Ditch your pms rollercoaster and ride your cycle smoothly.</h1>
+                <p className='[text-shadow:_0_1px_8px_rgb(0_0_0_/_40%)] text-xs md:text-lg text-white max-md:max-w-[500px] max-w-[620px] mx-auto leading-5 font-poppins'>Track your menstrual cycle, sync wellness tips, and unlock personalized insights that align with your body’s natural rhythm.</p>
             </div>
 
             <div className='flex max-sm:flex-col max-sm:w-full max-md:max-w-[370px] gap-4 mx-auto'>

@@ -54,7 +54,7 @@ const PopupDisplay: FC<PopupDisplayProps> = ({
                     />
                 </span>
             )}
-            <span className="w-[90px] sm:w-[100px] md:w-[120px] font-semibold leading-4 sm:text-[1rem] text-[1rem] tracking-wide font-play">
+            <span className="w-[90px] sm:w-[100px] md:w-[120px] font-regular leading-4 sm:text-[1rem] text-[1rem] tracking-normal font-poppins">
                 {label}
             </span>
         </motion.div>

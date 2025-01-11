@@ -36,8 +36,8 @@ const AppDisplay = () => {
             }}
         >
             <div className="flex flex-col gap-2 max-md:w-full">
-                <h2 className="md:text-[2.5rem] sm:text-[2rem] text-[1.5rem] tracking-tighter font-semibold text-white text-shadow-100">Feel the Advantage</h2>
-                <p className="md:text-[1rem] text-[0.875rem] leading-5 sm:max-md:w-[600px] md:max-w-[650px] text-shadow-100 text-white font-play">
+                <h2 className="md:text-[2.5rem] sm:text-[2rem] text-[1.5rem] tracking-tighter font-semibold text-white text-shadow-200 tracking-wide">Feel the Advantage</h2>
+                <p className="md:text-[1rem] mx-auto text-[0.875rem] leading-5 sm:max-md:w-[600px] md:max-w-[650px] text-shadow-200 text-white md:tracking-widest">
                     Easily manage your cycle with our intuitive interface. Track symptoms, set reminders, and gain insights into your menstrual health.
                 </p>
             </div>
