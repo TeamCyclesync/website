@@ -15,6 +15,10 @@ export const NavLinkList = [
     link: '/team',
   },
   {
+    title: 'Blogs',
+    link: '/blog',
+  },
+  {
     title: 'Get Started',
     link: "#get-started"
   },

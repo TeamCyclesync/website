@@ -28,9 +28,20 @@ html {
 .font-anton {
   font-family: 'Anton', sans-serif;
 }
-.font-catamaran{
-  font-family: 'Catamaran', sans-serif;
+
+.font-space{
+  font-family: 'Space_Grotesk', sans-serif;
 }
+.custom-hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow transition */
+  transform: scale(1); /* Default scale */
+}
+
+.custom-hover-effect:hover {
+  transform: scale(1.015);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
