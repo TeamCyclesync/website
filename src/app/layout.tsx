@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Play, Roboto, Catamaran, Poppins, Anton, Space_Grotesk } from "next/font/google"; // Import Six Caps
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 // Import and configure the fonts
 const play = Play({
