@@ -102,6 +102,7 @@ export default function RootLayout({
         className={`${roboto.className}  ${play.className} antialiased overflow-x-hidden`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
