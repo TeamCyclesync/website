@@ -10,6 +10,9 @@ export const blogData = [
     type: 'Health',
     content: `
       <p class="text-base text-gray-700 mb-2">PMS, or Premenstrual Syndrome, is a condition many women experience in the weeks leading up to their period. It comes with a variety of symptoms, ranging from physical discomfort to emotional changes. Most women encounter PMS at some stage in their lives, and for some, the symptoms can significantly affect everyday routines.</p>
+      <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+        <img src="/assets/blogs/blog1_1.jpeg" alt="Menstrual Phases" class="object-fill md:object-cover md:w-10/12 md:h-72 w-full h-40 rounded-3xl" />
+      </div>
       <h3 class="text-xl font-semibold">Why Does PMS Happen?</h3>
       <p class="text-base text-gray-700 mb-4">The exact cause of PMS isn’t fully understood, but it’s believed to be linked to hormonal changes during the menstrual cycle. Ovulation, when the body releases an egg, appears to be the triggering event. How sensitive a woman’s body is to these hormonal shifts might also influence the severity of symptoms.</p>
       <h3 class="text-xl font-semibold">Common Symptoms of PMS</h3>
@@ -21,6 +24,9 @@ export const blogData = [
         <li class="ml-2 flex items-start">&#8226; Changes in appetite</li>
         <li class="ml-2 flex items-start">&#8226; Shifts in sex drive</li>
       </ul>
+      <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+        <img src="/assets/blogs/blog1_2.jpeg" alt="Menstrual Phases" class="object-fill md:object-cover md:w-10/12 md:h-72 w-full h-40 rounded-3xl" />
+      </div>
       <ul class="ml-2 mb-2 list-none">
         <li class="text-lg text-gray-900 mb-2 font-semibold underline underline-offset-2">Physical Symptoms</li>
         <li class="ml-2 flex items-start">&#8226; Bloating and stomach pain</li>
@@ -28,6 +34,9 @@ export const blogData = [
         <li class="ml-2 flex items-start">&#8226; Sore or tender breasts</li>
         <li class="ml-2 flex items-start">&#8226; Skin issues</li>
       </ul>
+      <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+        <img src="/assets/blogs/blog1_3.jpeg" alt="Menstrual Phases" class="object-fill md:object-cover md:w-10/12 md:h-72 w-full h-40 rounded-3xl" />
+      </div>
       <p class="text-gray-700 mb-2">These symptoms can vary in intensity from person to person, but they’re manageable with the right approach.</p>
       <h3 class="text-xl font-semibold">How to Manage PMS Symptoms</h3>
       <p class="text-gray-700 mb-2">While PMS can’t be avoided, certain lifestyle changes can help ease its impact:</p>
@@ -36,6 +45,9 @@ export const blogData = [
         <li class="ml- flex items-start">&#8226; Regular Exercise: Physical activity like walking, yoga, or swimming can help reduce cramps and improve overall well-being.</li>
         <li class="ml- flex items-start">&#8226; Stress Management: Practices like yoga, meditation, or deep breathing exercises can help regulate emotions and improve sleep.</li>
       </ul>
+      <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+        <img src="/assets/blogs/blog1_4.jpeg" alt="Menstrual Phases" class="object-fill md:object-cover md:w-10/12 md:h-72 w-full h-40 rounded-3xl" />
+      </div>
       <h3 class="text-xl font-semibold">When to Seek Help</h3>
       <p class="text-gray-700">If PMS symptoms become severe or start interfering with your daily life, it’s important to consult a healthcare provider. They can evaluate your symptoms and provide treatment options, such as supplements, medications, or hormonal therapies. Remember that you’re not alone, and help is available.</p>
     `,
@@ -52,10 +64,16 @@ export const blogData = [
     content: `
       <p class="text-base text-gray-700 mb-2">Menstrual cycle is a natural biological process that prepares a woman’s body for a possible pregnancy. It involves the thickening of the uterine lining and the release of an egg from the ovaries.</p>
       <p class="text-base text-gray-700 mb-2">We all know that every woman gets their period every month and everyone's cycle is unique.Now, let's talk about the menstrual cycle. It has 4 phases and let’s know them better one by one.</p>
+      <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+        <img src="/assets/blogs/blog2_1.jpeg" alt="Menstrual Phases" class="object-fill md:object-cover md:w-10/12 md:h-72 w-full h-40 rounded-3xl" />
+      </div>
       <h3 class="text-xl mb-2 font-semibold">Phases of the Menstrual Cycle</h3>
       <p class="ml-2 mb-2 font-semibold">&#8226; Menstruation Phase:</p>
       <p class="ml-4 mb-2 text-gray-700">This is when bleeding occurs after the body sheds the lining of the uterus. It usually lasts about 3-7 days.</p>
       <p class="ml-4 mb-2 text-gray-700">As your period starts, estrogen and progesterone levels drop, signaling your body to release the uterine lining as menstrual blood. During this phase, you might feel cramps, back pain, or even bloating.</p>
+      <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+        <img src="/assets/blogs/blog2_2.jpeg" alt="Menstrual Phases" class="object-fill md:object-cover md:w-10/12 md:h-72 w-full h-40 rounded-3xl" />
+      </div>
       <p class="ml-2 mb-2 font-semibold">&#8226; Follicular Phase:</p>
       <p class="ml-4 mb-2 text-gray-700">It's called the Follicular phase because your pituitary gland releases a hormone called Follicle Stimulating Hormone (FSH), which stimulates the follicles in your ovaries to mature. These follicles contain your eggs.</p>
       <p class="ml-4 mb-2 text-gray-700">The follicular phase begins on the first day you menstruate. It lasts until ovulation, when one of your ovaries releases a mature egg.</p>
@@ -64,6 +82,9 @@ export const blogData = [
       <p class="ml-4 mb-2 text-gray-700">Ovulation takes place when a fully developed egg is released from your ovary and travels toward your uterus through the fallopian tube. This usually happens around day 14, in the span of 16 to 32 hours after the Luteinizing Hormone surge.</p>
       <p class="ml-4 mb-2 text-gray-700">Some people might feel a slight pain on one side of their abdomen—it’s normal, and it’s called mittelschmerz.</p>
       <p class="ml-4 mb-2 text-gray-700">During this phase, your estrogen and progesterone levels are at their highest, which can boost your mood, energy levels, and libido.</p>
+      <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+        <img src="/assets/blogs/blog2_3.jpeg" alt="Menstrual Phases" class="object-fill md:object-cover md:w-10/12 md:h-72 w-full h-40 rounded-3xl" />
+      </div>
       <p class="ml-2 mb-2 font-semibold">&#8226; Luteal Phase:</p>
       <p class="ml-4 mb-2 text-gray-700">The luteal phase of your menstrual cycle occurs right after ovulation (when your ovary releases an egg). It lasts about 14 days and ends when you get your menstrual period.</p>
       <p class="ml-4 mb-2 text-gray-700">The main purpose of the luteal phase is to prepare your uterus for a possible pregnancy.</p>
@@ -75,6 +96,9 @@ export const blogData = [
       <p class="mb-2 text-gray-700">The cycle repeats until menopause unless pregnancy or other health conditions prevent it from recurring.</p>
       <p class="mb-2 text-gray-700">Now that you all are familiar with the different phases of the menstrual cycle, let’s talk about the mood swings, cramps and fatigue you feel. Ever wondered why you get those random mood swings and feel tired?</p>
       <p class="mb-2 text-gray-700">These changes are real, and they’re caused by hormonal shifts that happen in different phases of your cycle.</p>
+      <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+        <img src="/assets/blogs/blog2_4.jpeg" alt="Menstrual Phases" class="object-fill md:object-cover md:w-10/12 md:h-72 w-full h-40 rounded-3xl" />
+      </div>
       <p class="mb-2 text-gray-700"><strong>Hormonal Changes:</strong> During your menstrual cycle, levels of hormones like estrogen and progesterone fluctuate, which can lead to emotional ups and downs and make you feel more tired than usual.</p>
       <p class="mb-2 text-gray-700"><strong>Iron Levels:</strong> Blood loss during your period can lower your iron levels, leading to fatigue and a feeling of being run down.</p>
       <p class="mb-2 text-gray-700"><strong>Stress:</strong> Emotional or physical stress can worsen these symptoms, making mood swings more intense and adding to feelings of fatigue.</p>
@@ -84,6 +108,9 @@ export const blogData = [
       <p class="ml-4 mb-2 text-gray-700">&#8210; For mood swings, try magnesium-rich foods like nuts or dark chocolate to help stabilize your emotions. Iron-rich foods like leafy greens and lentils combat fatigue.</p>
       <p class="ml-4 mb-2 text-gray-700">&#8210; Light activities like yoga can relieve cramps and improve your mood.</p>
       <p class="ml-4 mb-2 text-gray-700">&#8210; And also rest when you need to, it's like giving your body a break.</p>
+      <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+        <img src="/assets/blogs/blog2_5.jpeg" alt="Menstrual Phases" class="object-fill md:object-cover md:w-10/12 md:h-72 w-full h-40 rounded-3xl" />
+      </div>
       <p class="text-xl mb-2 font-semibold">Understanding Your Cycle</p>
       <p class="ml-4 mb-2 text-gray-700">&#8226; By regularly tracking your cycle, it helps you to understand unique patterns, irregular cycles or changes in symptoms such as cramps, mood swings and helps you predict your next period.</p>
       <p class="ml-4 mb-2 text-gray-700">&#8226; Methods of tracking:</p>
@@ -106,6 +133,9 @@ export const blogData = [
     <h3 class="text-xl font-semibold">Rich in Antioxidants</h3>
     <p class="text-base text-gray-700 mb-4">Green tea is packed with antioxidants, particularly catechins, which help combat oxidative stress and reduce the risk of chronic diseases.</p>
     <h3 class="text-xl font-semibold">Boosts Metabolism</h3>
+      <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+        <img src="/assets/blogs/blog3_1.jpg" alt="Menstrual Phases" class="object-fill md:object-fill md:w-10/12 md:h-72 w-full h-40 rounded-3xl" />
+      </div>
     <p class="text-base text-gray-700 mb-2">Drinking green tea can enhance metabolic rate and increase fat burning, making it a popular choice for those looking to lose weight.</p>
     <ul class="ml-2 mb-2 list-none">
       <li class="text-lg text-gray-900 mb-2 font-semibold underline underline-offset-2">Weight Loss Benefits</li>
@@ -117,6 +147,9 @@ export const blogData = [
     <ul class="ml-2 mb-2 list-none">
       <li class="text-lg text-gray-900 mb-2 font-semibold underline underline-offset-2">Cognitive Benefits</li>
       <li class="ml-2 flex items-start">&#8226; Enhances memory</li>
+      <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+        <img src="/assets/blogs/blog3_2.jpg" alt="Menstrual Phases" class="object-fill md:object-cover md:w-10/12 md:h-80 w-full h-40 rounded-3xl" />
+      </div>
       <li class="ml-2 flex items-start">&#8226; Reduces anxiety</li>
     </ul>
     <h3 class="text-xl font-semibold">Supports Heart Health</h3>
@@ -135,6 +168,9 @@ export const blogData = [
     </ul>
     <h3 class="text-xl font-semibold">Promotes Healthy Skin</h3>
     <p class="text-base text-gray-700 mb-2">The antioxidants in green tea can help protect the skin from damage, reduce signs of aging, and improve overall skin health.</p>
+    <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+      <img src="/assets/blogs/blog3_3.jpg" alt="Menstrual Phases" class="object-fill md:object-cover md:w-10/12 md:h-80 w-full h-40 rounded-3xl" />
+    </div>
     <ul class="ml-2 mb-2 list-none">
       <li class="text-lg text-gray-900 mb-2 font-semibold underline underline-offset-2">Skin Benefits</li>
       <li class="ml-2 flex items-start">&#8226; Reduces wrinkles</li>
