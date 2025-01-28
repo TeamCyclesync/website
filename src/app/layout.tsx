@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Play, Roboto, Catamaran, Poppins, Anton, Space_Grotesk } from "next/font/google"; // Import Six Caps
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // Import and configure the fonts
 const play = Play({
@@ -103,6 +104,7 @@ export default function RootLayout({
       >
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
