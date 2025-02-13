@@ -179,4 +179,18 @@ export const blogData = [
     <p class="text-gray-700 mb-2">Incorporating green tea into your daily routine can provide numerous health benefits, making it a valuable addition to a healthy lifestyle.</p>
   `,
 },
+{
+  id:'4',
+  title:'Self-Care During Your Period: Simple Tips for a Better Cycle',
+  description:'Your energy, focus, and mood shift throughout your cycle—so why not work with it? This blog explores how to align self-care with each phase, making your period more manageable.',
+  image:'/assets/hero4.jpeg',
+  authorImage: '/assets/shravya.jpg',
+  author: 'Shraavya',
+  date: '2025-02-13',
+  type: 'Wellness',
+  content:`
+  <p></p>
+  `,
+
+},
 ];
