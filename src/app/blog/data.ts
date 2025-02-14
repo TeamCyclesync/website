@@ -182,15 +182,51 @@ export const blogData = [
 {
   id:'4',
   title:'Self-Care During Your Period: Simple Tips for a Better Cycle',
-  description:'Your energy, focus, and mood shift throughout your cycle—so why not work with it? This blog explores how to align self-care with each phase, making your period more manageable.',
-  image:'/assets/hero4.jpeg',
+  description:'Your energy, focus, and mood shift throughout your cycle—so why not work with it? align self-care with each phase, making periods manageable.',
+  image:'/assets/hero4.jpg',
   authorImage: '/assets/shravya.jpg',
   author: 'Shraavya',
   date: '2025-02-13',
   type: 'Wellness',
   content:`
-  <p></p>
-  `,
+      <p class="text-base text-gray-700 mb-2">Many of us don't prioritize self-care during menstruation. It can be overwhelming or you might just not feel like doing anything. Menstruation can bring various challenges, including pain, mood swings, and fatigue. They can affect both physical and mental well-being. </p>
+      <p class="text-base text-gray-700 mb-2">By prioritizing self-care, you can take control of your well-being and make your menstrual cycle more manageable. </p>
+      <h3 class="text-xl font-semibold">Physical Self-Care</h3>
+      <p class="text-base text-gray-700 mb-4">It’s important to rest well during this time by giving your body enough time to recover and take it easy.</p>
+      <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+        <img src="/assets/blogs/blog4_1.jpg" alt="Menstrual Phases" class="object-fill md:object-fill md:w-10/12 md:h-72 w-full h-40 rounded-3xl" />
+      </div>
+      <p class="text-base text-gray-700 mb-4">We often feel discomfort during periods and the period pain makes it even harder to manage it. At times like that, try using a heating pad on your lower abdomen or a hot bath for relief.</p>
+      <p class="text-base text-gray-700 mb-4">If you’re still in pain, talk to your doctor about other options such as over-the-counter pain relievers. </p>
+      <h3 class="text-xl font-semibold">Nutrition</h3>      
+      <p class="text-base text-gray-700 mb-4">Eat foods that are rich in iron and vitamins, Iron may become depleted during menstruation for some women, especially if you have a heavy flow, increase iron-rich foods in your diet such as lean beef, turkey, beans and spinach during menstruation.</p>
+      <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+        <img src="/assets/blogs/blog4_2.jpg" alt="Menstrual Phases" class="object-fill md:object-fill md:w-10/12 md:h-72 w-full h-40 rounded-3xl" />
+      </div>
+      <p class="text-base text-gray-700 mb-4">Drinking plenty of fluids and avoiding processed foods and excessive caffeine can help. Eating dark chocolate can help with the cramps and boosts your mood.</p>
+      <h3 class="text-xl font-semibold">Fitness</h3>
+      <p class="text-base text-gray-700 mb-4">Instead of intense workouts, you could try low-impact exercises like stretching, yoga, or walking which can help relieve cramps and improve circulation.</p>
+      <h3 class="text-xl font-semibold">Emotional and Mental Self-Care</h3>
+      <p class="text-base text-gray-700 mb-4">It gets hard to take care of ourselves during this time. Due to hormonal changes, you get mood swings and feel discomfort.</p>
+      <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+        <img src="/assets/blogs/blog4_3.jpeg" alt="Menstrual Phases" class="object-fill md:object-fill md:w-10/12 md:h-72 w-full h-40 rounded-3xl" />
+      </div>      
+      <p class="text-base text-gray-700 mb-4">Talk to your family and friends, journal your thoughts and do things that make you feel happy. Indulge in activities like listening to music, reading books or anything creative.</p>
+      <p class="text-base text-gray-700 mb-4">Try breathing exercises, walking and meditation; these can help improve your mood and relieve cramps.</p>
+      <p class="text-base text-gray-700 mb-4">Energy can be low during menstruation and many of us seek solitude. We can also be incredibly reflective at this time. That means we are primed for tasks that require us to be analytical. It can be a great time for solo projects, proofreading content or reviewing reports.</p>
+
+      <h3 class="text-xl font-semibold">Hygiene Practices</h3>
+      <p class="text-base text-gray-700 mb-4">It is important for you to change pads/tampons regularly to avoid infections and will help avoid bacterial growth.</p>
+      <p class="text-base text-gray-700 mb-4">Wash the intimate area while showering and use cotton underwear and airy clothing to avoid irritation and feel comfy.</p>
+
+      <h3 class="text-xl font-semibold">Self-Care Tips</h3>
+      <p class="text-base text-gray-700 mb-4">Always keep pads, tampons, pain relievers with you, they might come in handy and you won't have to worry when you get your period. Try to adjust your work schedule according to your energy levels. Avoid the guilt of being less productive and focus on taking care of yourself.</p>
+      <div class="relative flex w-full mb-4 justify-center rounded-3xl">
+        <img src="/assets/blogs/blog4_4.jpg" alt="Menstrual Phases" class="object-fill md:object-fill md:w-10/12 md:h-72 w-full h-40 rounded-3xl" />
+      </div>
+      <h3 class="text-xl font-semibold">Conclusion</h3>
+      <p class="text-base text-gray-700 mb-4">Practicing self-care during periods isn’t complicated. It’s just that you need to add a few adjustments to your everyday life. Understand your body and do what feels right. By making small changes, you can reduce discomfort and feel more at ease during your period.</p>
+      `,
 
 },
 ];
