@@ -14,9 +14,13 @@ export const NavLinkList = [
     link: '/blog'
   },
   {
+    title: 'Signup',
+    link: "#signup"
+  },
+  {
     title: 'Get Started',
     link: "#get-started"
-  }
+  },
 ];
 
 export const TeamMemberDetails: TeamMemberProps[] = [

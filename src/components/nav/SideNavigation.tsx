@@ -1,9 +1,11 @@
-'use client'
-import { useState } from 'react'
-import Link from 'next/link'
-import { RiAppsLine } from 'react-icons/ri'
-import Image from 'next/image'
-import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet'
+'use client';
+
+import { useState } from 'react';
+import Link from 'next/link';
+import { RiAppsLine } from 'react-icons/ri';
+import Image from 'next/image';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet';
+import SignupForm from '@/components/SignupForm';
 
 export const NavLinkList = [
   {
@@ -20,15 +22,34 @@ export const NavLinkList = [
   },
   {
     title: 'Get Started',
-    link: "#get-started"
+    link: '#get-started',
   },
-]
+  {
+    title: 'Signup',
+    link: '#signup',
+  },
+];
 
 const SideNavigation = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [showSignupForm, setShowSignupForm] = useState(false);
+  const [fade, setFade] = useState('opacity-0 scale-90');
 
-  const handleLinkClick = () => {
-    setIsOpen(false);
+  const handleLinkClick = (link: string) => {
+    if (link === '#signup') {
+      setIsOpen(false);
+      setTimeout(() => {
+        setFade('opacity-100 scale-100');
+        setShowSignupForm(true);
+      }, 300);
+    } else {
+      setIsOpen(false);
+    }
+  };
+
+  const closeSignupForm = () => {
+    setFade('opacity-0 scale-90');
+    setTimeout(() => setShowSignupForm(false), 300);
   };
 
   return (
@@ -47,39 +68,61 @@ const SideNavigation = () => {
           <nav>
             <ul className="space-y-1 pt-8 px-2">
               {NavLinkList.map((item) => (
-                <li key={item.title} className='w-full'>
-                  <Link
-                    href={item.link}
-                    className="text-lg tracking-tighter font-medium w-full block py-2 px-4 rounded-md transition-all duration-200 ease-in-out hover:bg-purple-500/10 hover:scale-[1.02]"
-                    onClick={handleLinkClick}
-                  >
-                    {item.title}
-                  </Link>
+                <li key={item.title} className="w-full">
+                  {item.title === 'Signup' ? (
+                    <button
+                      onClick={() => handleLinkClick(item.link)}
+                      className="text-lg tracking-tighter font-medium w-full block py-2 px-4 rounded-md transition-all duration-200 ease-in-out hover:bg-purple-500/10 hover:scale-[1.02]"
+                    >
+                      {item.title}
+                    </button>
+                  ) : (
+                    <Link
+                      href={item.link}
+                      className="text-lg tracking-tighter font-medium w-full block py-2 px-4 rounded-md transition-all duration-200 ease-in-out hover:bg-purple-500/10 hover:scale-[1.02]"
+                      onClick={() => handleLinkClick(item.link)}
+                    >
+                      {item.title}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
           </nav>
           <div className="flex flex-col space-y-4 pb-8">
-            <span className='flex items-center space-x-4'>
+            <span className="flex items-center space-x-4">
               <div className="w-12 h-12 text-white rounded-full flex items-center justify-center">
-                <Image 
-                  src="/assets/logo.png" 
+                <Image
+                  src="/assets/logo.png"
                   alt="Cyclesync Logo"
-                  width={50} 
-                  height={50} 
-                  className="text-shadow-100" 
+                  width={50}
+                  height={50}
+                  className="text-shadow-100"
                 />
               </div>
               <span className="text-3xl text-neutral-800 tracking-tighter font-[800]">Cyclesync</span>
             </span>
-            <span className='tracking-tighter text-muted-foreground text-[0.725rem]'>
+            <span className="tracking-tighter text-muted-foreground text-[0.725rem]">
               &copy; 2024 Cyclesync India, All rights reserved
             </span>
           </div>
         </SheetContent>
       </Sheet>
+      {showSignupForm && (
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 transition-all duration-300">
+          <div className={`gradient-bg p-6 rounded-lg w-5/6 mx-16 transform transition-all duration-300 ${fade}`}>
+            <SignupForm />
+            <button
+              onClick={closeSignupForm}
+              className="mt-4 text-sm text-white font-poppins"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default SideNavigation
+export default SideNavigation;
