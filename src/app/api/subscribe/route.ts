@@ -1,9 +1,4 @@
-// app/api/subscribe/route.ts
-import { MongoClient } from 'mongodb';
-
-const uri = process.env.MONGODB_URI as string;
-console.log(process.env.MONGODB_URI);
-const client = new MongoClient(uri);
+import clientPromise from '@/lib/mongodb';
 
 export async function POST(req: Request) {
   const { email } = await req.json();
@@ -16,7 +11,7 @@ export async function POST(req: Request) {
   }
 
   try {
-    await client.connect();
+    const client = await clientPromise;
     const db = client.db('cyclesync');
     const collection = db.collection('subscribers');
 
@@ -41,7 +36,5 @@ export async function POST(req: Request) {
       status: 500,
       headers: { 'Content-Type': 'application/json' },
     });
-  } finally {
-    await client.close();
   }
 }
