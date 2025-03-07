@@ -52,10 +52,8 @@ const AboutUs = () => {
             designation={teamMember.designation}
             image={teamMember.image}
             vision={teamMember.vision}
-            github={teamMember.github}
             linkedin={teamMember.linkedin}
             twitter={teamMember.twitter}
-            instagram={teamMember.instagram}
           />
         ))}
       </div>
