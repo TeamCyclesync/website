@@ -1,23 +1,71 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { Button } from '../ui/button'
 import { FaAppStore } from 'react-icons/fa'
 import { BiLogoPlayStore } from "react-icons/bi";
-// import { RiMap2Line } from 'react-icons/ri'
 import { VscMapVertical } from "react-icons/vsc";
 import Link from 'next/link'
-import {motion} from "framer-motion"
-
+import { motion } from "framer-motion"
+import { SparklesText } from '../SparklesText'
+import Avatar from '@/components/Avatar'
 const HeroText = () => {
+    const [titleNumber, setTitleNumber] = useState(0);
+    const titles = useMemo(
+        () => ["smoothly", "easily", "confidently", "happily", "healthily"],
+        []
+    );
+
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            if (titleNumber === titles.length - 1) {
+                setTitleNumber(0);
+            } else {
+                setTitleNumber(titleNumber + 1);
+            }
+        }, 2000);
+        return () => clearTimeout(timeoutId);
+    }, [titleNumber, titles]);
+
     return (
+        <>
         <motion.div 
             initial={{opacity: 0, translateY: "20px"}}
             animate={{opacity: 1, translateY: 0}}
             transition={{duration: 0.8,  ease: 'easeOut', delay: 0.25}}
             className='md:max-w-[1200px] md:mx-auto max-sm:px-[1rem] sm:px-[3rem] text-center flex flex-col gap-8 z-[10]'
         >
-            <div className='flex flex-col gap-8'>
-                <h1 className='font-anton tracking-wide leading-tight max-sm:text-[30px] max-sm:max-w-[450px] sm:max-w-[500px] sm:text-[40px] md:text-[65px] text-white drop-shadow-2xl md:max-w-[800px] mx-auto [text-shadow:_0_1px_8px_rgb(0_0_0_/_30%)] '>Ditch your pms rollercoaster and ride your cycle smoothly.</h1>
+            <div className='flex flex-col'>
+            <SparklesText 
+                    text="Ditch your PMS rollercoaster and ride your cycle"
+                    className=' tracking-wide leading-tight max-sm:text-[30px] max-sm:max-w-[450px] sm:max-w-[500px] sm:text-[40px] md:text-[65px] text-white drop-shadow-2xl md:max-w-[800px] mx-auto [text-shadow:_0_1px_8px_rgb(0_0_0_/_30%)] '
+                    />
+                   
+                   <h2
+                    className=" flex w-full justify-center overflow-hidden text-center md:pb-4 md:pt-0 md:mb-24 mt-2 mb-16">
+                        {titles.map((title, index) => (
+                            <motion.span
+                                key={index}
+                                className=" font-anton tracking-wide leading-tight absolute max-sm:text-[35px] max-sm:max-w-[450px] sm:max-w-[500px] sm:text-[40px] md:text-[75px] text-white drop-shadow-2xl md:max-w-[800px] mx-auto [text-shadow:_0_1px_8px_rgb(0_0_0_/_30%)]  "
+                                initial={{ opacity: 0, y: "-100" }}
+                                transition={{ type: "spring", stiffness: 50 }}
+                                animate={
+                                    titleNumber === index
+                                        ? {
+                                            y: 0,
+                                            opacity: 1,
+                                        }
+                                        : {
+                                            y: titleNumber > index ? -150 : 150,
+                                            opacity: 0,
+                                        }
+                                }
+                            >
+                                {title}
+                            </motion.span>
+                        ))}
+
+                    </h2>
+                
                 <p className='[text-shadow:_0_1px_8px_rgb(0_0_0_/_40%)] text-xs md:text-lg text-white max-md:max-w-[500px] max-w-[620px] mx-auto leading-5 font-poppins'>Track your menstrual cycle, sync wellness tips, and unlock personalized insights that align with your body’s natural rhythm.</p>
             </div>
 
@@ -35,7 +83,9 @@ const HeroText = () => {
                     </Button>
                 </Link>
             </div>
+            <Avatar />
         </motion.div>
+        </>
     )
 }
 

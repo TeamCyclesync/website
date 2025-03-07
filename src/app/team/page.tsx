@@ -18,7 +18,7 @@ import { TeamMemberDetails } from "@/constants";
 
 const TeamPage = () => {
   const [index, setIndex] = useState(0);
-  const { name, designation, vision, image, twitter, instagram, github, linkedin } = TeamMemberDetails[index];
+  const { name, designation, vision, image, twitter, linkedin } = TeamMemberDetails[index];
 
   const handleControl = (type: string) => {
     if (type === "prev") {
@@ -55,12 +55,6 @@ const TeamPage = () => {
                       </a>
                       <a href={linkedin} className="inline-block sm:text-2xl opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4">
                         <FontAwesomeIcon icon={faLinkedinIn} />
-                      </a>
-                      <a href={instagram} className="inline-block sm:text-2xl opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4">
-                        <FontAwesomeIcon icon={faInstagram} />
-                      </a>
-                      <a href={github} className="inline-block sm:text-2xl opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100">
-                        <FontAwesomeIcon icon={faGithub} />
                       </a>
                     </div>
                   </div>

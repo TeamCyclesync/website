@@ -6,16 +6,23 @@ import DownloadCTA from "@/components/landing/DownloadCTA"
 import Footer from "@/components/landing/Footer"
 import HeroSection from "@/components/landing/HeroSection"
 import Navigation from "@/components/nav/Navigation"
+// import Faqs from '@/components/Faqs'
+// import Avatar from '@/components/Avatar'
+// import AuroraBackground from '@/components/AuroraBackground'
 
 const LandingPage = () => {
   return (
-    <div className='gradient-bg dotted-grid-mask min-h-screen grid grid-rows-[auto_1fr_auto] relative overflow-x-hidden'>
+
+    <div className='gradient-bg  dotted-grid-mask min-h-screen grid grid-rows-[auto_1fr_auto] relative overflow-x-hidden'>
       <BackToTop />
 
       <Navigation />
+    
       <main className="flex flex-col max-sm:gap-[5rem] gap-[1rem]">
         {/* Hero Section */}
         <HeroSection />
+
+        
 
         {/* Mobile app display */}
         <AppDisplay />
@@ -27,6 +34,7 @@ const LandingPage = () => {
 
         <DownloadCTA />
       </main>
+      {/* <Faqs/> */}
       <Footer />
     </div>
   )

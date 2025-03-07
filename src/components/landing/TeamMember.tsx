@@ -8,12 +8,10 @@ export interface TeamMemberProps {
   vision: string;
   image: string;
   twitter: string;
-  instagram: string;
-  github: string;
   linkedin: string;
 }
 
-const TeamMember: React.FC<TeamMemberProps> = ({ name, designation, vision, image, twitter, instagram, github, linkedin }) => {
+const TeamMember: React.FC<TeamMemberProps> = ({ name, designation, vision, image, twitter, linkedin }) => {
   const [showDetails, setShowDetails] = useState(false);
 
   const handleToggleDetails = () => {
@@ -34,8 +32,6 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, designation, vision, imag
           designation={designation}
           vision={vision}
           twitter={twitter}
-          instagram={instagram}
-          github={github}
           linkedin={linkedin} image={''}        />
       )}
     </div>
