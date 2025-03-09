@@ -108,9 +108,23 @@ html {
 
   /* Gradients and colors*/
   .gradient-bg {
-    background-color: rgb(236, 72, 153);
-    background-image: radial-gradient(at 36.33% -5.93%, rgb(124, 58, 237) 0, transparent 97%), radial-gradient(at 77% 39%, rgb(252, 231, 243) 0, transparent 56%), radial-gradient(at 100.27% 100.43%, rgb(20, 184, 166) 0, transparent 54%), radial-gradient(at 97.83% 58.23%, rgb(55, 48, 163) 0, transparent 42%), radial-gradient(at 57.12% 42.90%, rgb(243, 244, 246) 0, transparent 56%), radial-gradient(at 81% 26%, rgb(216, 180, 254) 0, transparent 28%) ;
-  }
+    background-color: rgb(200, 50, 130);
+    background-image: radial-gradient(at 36.33% -5.93%, rgb(100, 30, 210) 0, transparent 97%), 
+                      radial-gradient(at 77% 39%, rgb(220, 200, 230) 0, transparent 56%), 
+                      radial-gradient(at 100.27% 100.43%, rgb(10, 160, 140) 0, transparent 54%), 
+                      radial-gradient(at 97.83% 58.23%, rgb(40, 30, 140) 0, transparent 42%), 
+                      radial-gradient(at 57.12% 42.90%, rgb(220, 220, 220) 0, transparent 56%), 
+                      radial-gradient(at 81% 26%, rgb(180, 140, 250) 0, transparent 28%);
+    background-size: 400% 400%;
+    animation: flowingGradientDark 6s ease-in-out infinite;
+}
+
+@keyframes flowingGradientDark {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 
   .gradient-bg-1 {
     background-image: linear-gradient(rgb(241, 245, 249), rgb(224, 242, 254), rgb(186, 230, 253));
