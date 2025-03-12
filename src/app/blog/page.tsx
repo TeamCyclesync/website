@@ -6,7 +6,6 @@ import Navigation from "@/components/nav/Navigation";
 import Footer from "@/components/landing/Footer";
 import BlogCard from "@/components/BlogCard";
 import { blogData } from "./data";
-
 const BlogPage: React.FC = () => {
   const [visibleBlogs, setVisibleBlogs] = useState(blogData.slice(0, 6));
   const [hasMore, setHasMore] = useState(true);
@@ -37,7 +36,7 @@ const BlogPage: React.FC = () => {
       return () => window.removeEventListener("scroll", handleScroll);
     }
   }, [visibleBlogs]);
-
+  
   return (
     <div className="gradient-bg dotted-grid-mask min-h-screen grid grid-rows-[auto_1fr_auto] relative overflow-x-hidden">
       <Navigation />
@@ -56,6 +55,7 @@ const BlogPage: React.FC = () => {
               image={blog.image}
               type={blog.type}
             />
+                    
           </motion.div>
         ))}
       </main>

@@ -1,27 +1,26 @@
-"use client"
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+'use client';
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebookF,
   faLinkedinIn,
   faTwitter,
   faInstagram,
   faGithub,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faChevronLeft,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
-import Navigation from "@/components/nav/Navigation";
-import Footer from "@/components/landing/Footer";
-import { TeamMemberDetails } from "@/constants";
+} from '@fortawesome/free-brands-svg-icons';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import Navigation from '@/components/nav/Navigation';
+import Footer from '@/components/landing/Footer';
+import { TeamMemberDetails } from '@/constants';
+import AnimatedText from "@/components/AnimatedText ";
+import Typewriter from "@/components/Typewriter";
 
 const TeamPage = () => {
   const [index, setIndex] = useState(0);
   const { name, designation, vision, image, twitter, linkedin } = TeamMemberDetails[index];
 
   const handleControl = (type: string) => {
-    if (type === "prev") {
+    if (type === 'prev') {
       setIndex(index <= 0 ? TeamMemberDetails.length - 1 : index - 1);
     } else {
       setIndex(index >= TeamMemberDetails.length - 1 ? 0 : index + 1);
@@ -32,7 +31,26 @@ const TeamPage = () => {
     <div className="gradient-bg dotted-grid-mask min-h-screen grid grid-rows-[auto_1fr_auto] relative overflow-x-hidden">
       <Navigation />
       <main className="flex flex-col items-center justify-center py-16">
-        <h1 className="text-white text-4xl font-bold mb-8 font-poppins">Meet Our Team</h1>
+        <AnimatedText
+          className="mb-8 text-white font-bold"
+          text={
+            <span>
+              Meet Our{' '}
+              <Typewriter
+                text="Team"
+                speed={70}
+                className="text-yellow-500"
+                waitTime={1500}
+                deleteSpeed={40}
+                cursorChar="_"
+              />
+            </span>
+          }
+          textClassName="text-white text-4xl tra font-bold mb-8 font-poppins mb-1"
+          underlinePath="M 0,10 Q 75,0 150,10 Q 225,20 300,10"
+          underlineHoverPath="M 0,10 Q 75,20 150,10 Q 225,0 300,10"
+          underlineDuration={1.5}
+        />
         <section className="ezy__team8 light bg-blue-100 dark:bg-[#0b1727] text-zinc-900 dark:text-white overflow-hidden rounded-lg">
           <div>
             <div className="container px-8 mx-auto">
@@ -46,14 +64,24 @@ const TeamPage = () => {
                 </div>
                 <div className="w-full md:w-1/2 relative">
                   <div className="pt-12 pb-28 md:py-24 lg:py-48 lg:pr-24">
-                    <h4 className="font-medium text-2xl sm:text-4xl mb-1 font-poppins">{name}</h4>
+                    <h4 className="font-medium text-2xl sm:text-4xl mb-1 font-poppins">
+                      {name}
+                    </h4>
                     <p className="mb-6 sm:text-xl">{designation}</p>
-                    <p className="opacity-50 mb-0 leading-7 text-xs sm:text-xl font-poppins">{vision}</p>
+                    <p className="opacity-50 mb-0 leading-7 text-xs sm:text-xl font-poppins">
+                      {vision}
+                    </p>
                     <div className="mt-6">
-                      <a href={twitter} className="inline-block sm:text-2xl opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4">
+                      <a
+                        href={twitter}
+                        className="inline-block sm:text-2xl opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                      >
                         <FontAwesomeIcon icon={faTwitter} />
                       </a>
-                      <a href={linkedin} className="inline-block sm:text-2xl opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4">
+                      <a
+                        href={linkedin}
+                        className="inline-block sm:text-2xl opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                      >
                         <FontAwesomeIcon icon={faLinkedinIn} />
                       </a>
                     </div>
@@ -64,13 +92,13 @@ const TeamPage = () => {
                   <div className="-mt-10 -translate-y-7">
                     <button
                       className="w-10 h-10 text-[12px] bg-transparent rounded-full border border-slate-400 inline-flex justify-center items-center transition duration-300 hover:bg-slate-300 dark:hover:bg-slate-700 mr-3"
-                      onClick={() => handleControl("prev")}
+                      onClick={() => handleControl('prev')}
                     >
                       <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
                     <button
                       className="w-10 h-10 text-[12px] bg-transparent rounded-full border border-slate-400 inline-flex justify-center items-center transition duration-300 hover:bg-slate-300 dark:hover:bg-slate-700"
-                      onClick={() => handleControl("next")}
+                      onClick={() => handleControl('next')}
                     >
                       <FontAwesomeIcon icon={faChevronRight} />
                     </button>

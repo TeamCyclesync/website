@@ -9,10 +9,10 @@ const DownloadCTA = () => {
             <div className="flex gap-2 sm:flex-row flex-col items-center text-center">
                 <div className="md:relative max-md:flex justify-center items-center w-[200px] h-[300px] md:w-[300px] md:h-[400px]">
                     <picture>
-                        <source media="(max-width: 768px)" srcSet="/assets/download-mockup.png" />
-                        <source media="(min-width: 640px)" srcSet="/assets/mockup.png" />
+                        <source media="(max-width: 768px)" srcSet="https://syedfahad7.github.io/Portfolio_project_vids/videos/download-mockup.png" />
+                        <source media="(min-width: 640px)" srcSet="https://syedfahad7.github.io/Portfolio_project_vids/videos/mockup.png" />
                         <Image
-                            src="/assets/mockup.png"
+                            src="https://syedfahad7.github.io/Portfolio_project_vids/videos/mockup.png"
                             alt="Application Mockup"
                             width={300}
                             height={400}

@@ -11,10 +11,10 @@ const Footer = () => {
             src="./assets/logo.png"
             className="w-16 h-16 mb-4 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-16 lg:h-16"
           />
-          <p className="text-sm font-poppins">© 2024 CycleSync</p>
+          <p className="text-sm font-poppins">© 2025 CycleSync</p>
           <div className="mt-2 space-y-1">
             <h2 className="text-lg font-anton tracking-widest underline underline-offset-4">LEGAL</h2>
-            <ul className="text-sm space-y-2 ">
+            <ul className="text-sm space-y-0 ">
               <li>
           <a className="hover:underline font-poppins" href="#">
             Privacy &amp; Policy

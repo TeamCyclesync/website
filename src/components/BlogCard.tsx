@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { FaArrowCircleRight } from "react-icons/fa";
+
 
 interface BlogCardProps {
   id: string;
@@ -11,6 +12,7 @@ interface BlogCardProps {
 }
 
 const BlogCard: React.FC<BlogCardProps> = ({ id, title, description, image, type }) => {
+
   return (
     <div className="rounded-lg shadow-lg overflow-hidden group custom-hover-effect relative h-full bg-white/50 group-hover:bg-white/0">
       <div className="relative">

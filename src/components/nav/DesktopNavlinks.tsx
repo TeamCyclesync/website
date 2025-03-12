@@ -7,21 +7,21 @@ import Link from 'next/link';
 import { useState } from 'react';
 import SignupForm from '@/components/SignupForm';
 import { motion, AnimatePresence } from 'framer-motion';
+import { InteractiveHoverButton } from '@/components/InteractiveHoverButton';
 
 const DesktopNavlinks = () => {
   const [showSignupForm, setShowSignupForm] = useState(false);
 
   return (
-    <nav className="hidden md:flex items-center gap-6 text-sm text-white">
+    <nav className="hidden md:flex items-center gap-8 text-sm text-white">
       {NavLinkList.map((link, index) =>
         link.title === 'Get Started' ? (
           <Link href={'#get-started'} key={index}>
-            <Button
+            <InteractiveHoverButton
               key={index}
-              className="text-fuchsia-200 hover:scale-105 transition-all duration-300 flex gap-2 items-center hover:drop-shadow-xl"
-            >
-              <span>{link.title}</span>
-            </Button>
+              text={link.title}
+              className=" text-black relative justify-center"
+            />
           </Link>
         ) : link.title === 'Signup' ? (
           <button

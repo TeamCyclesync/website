@@ -18,6 +18,10 @@ export const NavLinkList = [
     link: "#signup"
   },
   {
+    title: 'Journey',
+    link: '/journey'
+  },
+  {
     title: 'Get Started',
     link: "#get-started"
   },

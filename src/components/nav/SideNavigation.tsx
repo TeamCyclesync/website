@@ -103,7 +103,7 @@ const SideNavigation = () => {
               <span className="text-3xl text-neutral-800 tracking-tighter font-[800]">Cyclesync</span>
             </span>
             <span className="tracking-tighter text-muted-foreground text-[0.725rem]">
-              &copy; 2024 Cyclesync India, All rights reserved
+              &copy; 2025 Cyclesync India, All rights reserved
             </span>
           </div>
         </SheetContent>

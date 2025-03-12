@@ -44,7 +44,7 @@ const AppDisplay = () => {
 
             <div>
                 <Image
-                    src={"/assets/mockup1.png"}
+                    src="https://syedfahad7.github.io/Portfolio_project_vids/videos/mockup1.png"
                     width={300}
                     height={300}
                     alt="mockup"
