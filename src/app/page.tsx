@@ -6,6 +6,9 @@ import DownloadCTA from "@/components/landing/DownloadCTA"
 import Footer from "@/components/landing/Footer"
 import HeroSection from "@/components/landing/HeroSection"
 import Navigation from "@/components/nav/Navigation"
+import { Button } from "@/components/ui/button"
+import { SquareArrowOutUpRight } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa";
 // import Faqs from '@/components/Faqs'
 // import Avatar from '@/components/Avatar'
 // import AuroraBackground from '@/components/AuroraBackground'

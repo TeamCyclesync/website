@@ -17,7 +17,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ id, title, description, image, type
     <div className="rounded-lg shadow-lg overflow-hidden group custom-hover-effect relative h-full bg-white/50 group-hover:bg-white/0">
       <div className="relative">
         <img src={image} alt={`Image for ${title}`} className="w-full h-48 object-cover transition-all duration-300 grayscale group-hover:grayscale-0" />
-        <span className=" font-poppins absolute top-2 left-2 bg-transparent border bg-white/50 text-black group-hover:bg-white/80 text-xs font-bold tracking-wider px-2 py-0.5 rounded-full">
+        <span className=" font-poppins absolute top-2 left-2 bg-transparent border text-black group-hover:bg-white/80 text-xs font-bold tracking-wider px-2 py-0.5 rounded-full">
           • {type}
         </span>
       </div>

@@ -25,7 +25,7 @@ export default function Activity({
 		<div className="~px-0/16 ~text-[0.8125rem]/sm flex w-1/3 select-none items-center text-white">
 			<div className="flex flex-1 items-center gap-1.5">
 				<ChartNoAxesColumn absoluteStrokeWidth className="~size-4/5" />
-				<NumberFlow willChange continuous value={views} format={format} />
+				<NumberFlow willChange value={views} format={format} />
 			</div>
 			<div className="flex-1">
 				<button
@@ -44,7 +44,7 @@ export default function Activity({
 							)}
 						/>
 					</div>
-					<NumberFlow willChange continuous value={likes} format={format} />
+					<NumberFlow willChange value={likes} format={format} />
 				</button>
 			</div>
 		</div>

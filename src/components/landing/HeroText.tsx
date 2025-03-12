@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useMemo, useState } from "react";
 import { Button } from "../ui/button";
-import { FaAppStore } from "react-icons/fa";
+import { FaAppStore, FaWhatsapp } from "react-icons/fa";
 import { BiLogoPlayStore } from "react-icons/bi";
 import { VscMapVertical } from "react-icons/vsc";
 import Link from "next/link";
@@ -103,6 +103,27 @@ const HeroText = () => {
           </Link>
         </div>
         <Avatar />
+              <div className="inline-flex -space-x-px rounded-lg shadow-sm shadow-black/5 rtl:space-x-reverse mx-auto">
+              <Link href="https://chat.whatsapp.com/FBwUuUn8JRgKjU9R54vDos" passHref className="rounded-none">
+                <Button
+                  className="rounded-none font-poppins shadow-none first:rounded-s-lg -visible:z-10"
+                  variant="secondary"
+                  size="default"
+                >
+                  Join Us
+                </Button>
+                </Link>
+                <Link href="https://chat.whatsapp.com/FBwUuUn8JRgKjU9R54vDos" passHref className="rounded-none">
+                <Button
+                  className="rounded-none shadow-none last:rounded-e-lg focus-visible:z-10 "
+                  variant="outline"
+                  size="default"
+                  aria-label="Open link"
+                >
+                  <FaWhatsapp size={16} strokeWidth={2} className="text-green-600" />
+                </Button>
+                </Link>
+            </div>
       </motion.div>
     </>
   );

@@ -14,7 +14,7 @@ const Footer = () => {
           <p className="text-sm font-poppins">© 2025 CycleSync</p>
           <div className="mt-2 space-y-1">
             <h2 className="text-lg font-anton tracking-widest underline underline-offset-4">LEGAL</h2>
-            <ul className="text-sm space-y-0 ">
+            <ul className="text-sm space-y- ">
               <li>
           <a className="hover:underline font-poppins" href="#">
             Privacy &amp; Policy
