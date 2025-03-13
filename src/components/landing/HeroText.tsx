@@ -86,7 +86,7 @@ const HeroText = () => {
             </Button>
           </Link>
           <Link
-            href={"/"}
+            href={"#get-started"}
             className="hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.15)] transition-all duration-300 ease-out"
           >
             <ShimmerButton className="shadow-2xl">

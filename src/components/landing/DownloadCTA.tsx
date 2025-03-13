@@ -22,9 +22,9 @@ const DownloadCTA = () => {
                         />
                     </picture>
                 </div>
-
+        
                 <div className="flex flex-col gap-6 max-sm:mt-8">
-                    <h3 className="max-sm:max-w-[350px] sm:max-w-[450px] text-[2rem] md:text-[2.5rem] tracking-tighter font-semibold text-white leading-[35px] sm:leading-[40px] text-shadow-200">Coming Soon on Playstore and App Store</h3>
+                    <h3 className="max-sm:max-w-[350px] sm:max-w-[450px] text-[2rem] md:text-[2.5rem] tracking-normal font-semibold text-white leading-[35px] sm:leading-[40px] text-shadow-200">Coming Soon on Playstore and App Store</h3>
                     <div className="flex gap-2 items-center justify-center">
                         <div className="flex gap-2 max-xxsm:flex-col items-center justify-center">
                             <div className="relative h-[50px] w-[150px] sm:h-[60px] sm:w-[160px] rounded-lg">

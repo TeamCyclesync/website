@@ -12,7 +12,7 @@ import { FaWhatsapp } from "react-icons/fa";
 // import Faqs from '@/components/Faqs'
 // import Avatar from '@/components/Avatar'
 // import AuroraBackground from '@/components/AuroraBackground'
-
+import { Logos3 } from "@/components/Logos3"
 const LandingPage = () => {
   return (
 
@@ -29,7 +29,9 @@ const LandingPage = () => {
 
         {/* Mobile app display */}
         <AppDisplay />
-
+        <Logos3 className="mx-auto"/>;
+       
+        
         <Bento />
 
         {/* Team Intro / About us  */}
