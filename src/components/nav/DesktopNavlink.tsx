@@ -8,7 +8,7 @@ type DesktopNavlinkProps = {
 
 const DesktopNavlink: FC<DesktopNavlinkProps> = ({href, children}) => {
   return (
-    <Link href={href} className="hover:scale-105 text-white transition-all ease-out">
+    <Link href={href} className="hover:scale-105 text-white transition-all ease-in">
         {children}
     </Link>
   )

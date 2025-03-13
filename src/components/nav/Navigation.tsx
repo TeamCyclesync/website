@@ -14,15 +14,18 @@ const Navigation = () => {
         >
             <div className="logo">
                 <span className="text-white text-[20px] flex flex-col items-center">
-                    <span className="p-2 rounded-full">                        <Image 
+                    <span className="p-1 rounded-full">                        <Image 
                             src="/assets/logo.png" 
                             alt="Cyclesync Logo"
-                            width={40} 
+                            width={44} 
                             height={0} 
                             className="text-shadow-100" 
                         />
                     </span>
-                    <span className="tracking-widest text-md font-medium max-md:hidden font-catamaran">Cyclesync</span>
+<span className="tracking-widest hover:tracking-[0.07em] transition-all duration-300 text-md font-medium max-md:hidden font-poppins">
+  CycleSync
+</span>
+
                 </span>
             </div>
 

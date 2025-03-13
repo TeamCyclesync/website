@@ -8,35 +8,46 @@ import { useState } from 'react';
 import SignupForm from '@/components/SignupForm';
 import { motion, AnimatePresence } from 'framer-motion';
 import { InteractiveHoverButton } from '@/components/InteractiveHoverButton';
+import { ExpandableTabs } from '@/components/expandable-tabs';
+import { Home, Users, BookOpen, UserPlus, Map } from 'lucide-react';
 
 const DesktopNavlinks = () => {
   const [showSignupForm, setShowSignupForm] = useState(false);
 
+  const tabs = [
+    { title: 'Home', icon: Home },
+    { title: 'Team', icon: Users },
+    { title: 'Blogs', icon: BookOpen },
+    { title: 'Signup', icon: UserPlus },
+    { title: 'Journey', icon: Map },
+  ];
+
   return (
     <nav className="hidden md:flex items-center gap-8 text-sm text-white">
-      {NavLinkList.map((link, index) =>
-        link.title === 'Get Started' ? (
-          <Link href={'#get-started'} key={index}>
-            <InteractiveHoverButton
-              key={index}
-              text={link.title}
-              className=" text-black relative justify-center"
-            />
-          </Link>
-        ) : link.title === 'Signup' ? (
-          <button
-            key={index}
-            onClick={() => setShowSignupForm(true)}
-            className="hover:scale-105 text-white transition-all ease-out"
-          >
-            {link.title}
-          </button>
-        ) : (
-          <DesktopNavlink href={link.link} key={index}>
-            {link.title}
-          </DesktopNavlink>
-        ),
-      )}
+      <ExpandableTabs
+        tabs={tabs}
+        activeColor="text-blue-500"
+        className="border-blue-200 dark:border-blue-800"
+        onChange={(index) => {
+          if (index !== null) {
+            const selectedTab = tabs[index];
+            if (selectedTab.title === 'Signup') {
+              setShowSignupForm(true);
+            } else {
+              const link = NavLinkList.find((nav) => nav.title === selectedTab.title)?.link;
+              if (link) {
+                window.location.href = link;
+              }
+            }
+          }
+        }}
+      />
+      <Link href={'#get-started'}>
+        <InteractiveHoverButton
+          text="Get Started"
+          className="text-black relative justify-center"
+        />
+      </Link>
       <AnimatePresence>
         {showSignupForm && (
           <motion.div

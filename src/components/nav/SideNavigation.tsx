@@ -110,7 +110,7 @@ const SideNavigation = () => {
       </Sheet>
       {showSignupForm && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 transition-all duration-300">
-          <div className={`gradient-bg p-6 rounded-lg w-5/6 mx-16 transform transition-all duration-300 ${fade}`}>
+          <div className={`bg-black bg-opacity-80 p-6 rounded-lg w-5/6 mx-16 transform transition-all duration-300 ${fade}`}>
             <SignupForm />
             <button
               onClick={closeSignupForm}
