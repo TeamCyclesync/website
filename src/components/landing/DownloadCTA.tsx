@@ -10,15 +10,14 @@ const DownloadCTA = () => {
                 <div className="md:relative max-md:flex justify-center items-center w-[200px] h-[300px] md:w-[300px] md:h-[400px]">
                     <picture>
                         <source media="(max-width: 768px)" srcSet="https://syedfahad7.github.io/Portfolio_project_vids/videos/download-mockup.png" />
-                        <source media="(min-width: 640px)" srcSet="https://syedfahad7.github.io/Portfolio_project_vids/videos/mockup.png" />
-                        <Image
-                            src="https://syedfahad7.github.io/Portfolio_project_vids/videos/mockup.png"
+                        <source media="(min-width: 640px)" srcSet="assets/mockup.png" />
+                        <img
+                            src="assets/mockup.png"
                             alt="Application Mockup"
                             width={300}
                             height={400}
                             className="max-md:object-cover max-md:w-auto max-md:h-[310px] md:absolute md:-right-[20%] lg:-right-[20%] md:top-[50%] md:-translate-y-[50%] md:w-auto md:h-auto"
                             sizes="(max-width: 768px) 150px, (min-width: 768px) 300px"
-                            priority
                         />
                     </picture>
                 </div>

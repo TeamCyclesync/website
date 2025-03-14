@@ -90,8 +90,8 @@ const Bento = () => {
 
                 {/* Sub Section 2 */}
                 <div className='max-sm:col-span-1 fully-centered rounded-xl hover:scale-[1.03] duration-300 transition-scale ease-in-out bg-emerald-100 relative overflow-hidden group'>
-                <RiMentalHealthLine  className='absolute text-pink-700 opacity-70 md:right-[15%] right-[0%] group-hover:scale-[1.08] transition-all duration-300 ease' size={50} />
-                <h3 className='hidden md:block md:text-[1.1rem] text-purple-950 font-bold tracking-tighter text-right text-shadow-200 absolute right-[5%] bottom-[15%] leading-[15px]'>
+                <RiMentalHealthLine  className='absolute text-pink-700 opacity-70 md:right-[10%] right-[0%] group-hover:scale-[1.08] transition-all duration-300 ease' size={50} />
+                <h3 className='hidden md:block md:text-sm text-purple-950 font-bold tracking-tighter text-right text-shadow-200 absolute right-[5%] bottom-[18%] leading-[15px]'>
                 Love Yourself
                     </h3>
                     <div className='absolute h-[120px] w-[120px] md:h-[200px] md:w-[180px] left-[0%] grayscale group-hover:scale-[1.05] group-hover:grayscale-0 group-hover:left-[5%] transition-all duration-300 ease'>

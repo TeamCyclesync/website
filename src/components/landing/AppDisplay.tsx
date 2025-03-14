@@ -43,13 +43,12 @@ const AppDisplay = () => {
             </div>
 
             <div>
-                <Image
-                    src="https://syedfahad7.github.io/Portfolio_project_vids/videos/mockup1.png"
+                <img
+                    src="assets/mockup1.png"
                     width={300}
                     height={300}
                     alt="mockup"
                     className="mx-auto md:mt-[3rem] mt-[2rem]"
-                    priority
                 />
             </div>
 
