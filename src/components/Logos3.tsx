@@ -45,7 +45,7 @@ const Logos3 = ({
       id: 'logo-4',
       description: 'Logo 4',
       image: '/assets/trusted/nsr.png',
-      className: 'h-40 w-auto',
+      className: 'h-16 w-auto',
     },
     {
       id: 'logo-5',
