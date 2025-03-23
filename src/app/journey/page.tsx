@@ -11,14 +11,14 @@ import { useInView } from 'react-intersection-observer';
 const JourneyPage: React.FC = () => {
   const data = [
     {
-      title: "February 2024 - Presenting CycleSync on Big Stages",
+      title: "February 2025 - Presenting CycleSync on Big Stages",
       content: (
         <div>
           <p className="text-white dark:text-neutral-200 text-xs md:text-lg font-poppins mb-8">
-            BioAsia 2024 – Out of 1,500+ startups, we were among the 80 selected to present at India’s largest biotechnology and healthcare summit, hosted by the Government of Telangana. This opportunity allowed us to showcase CycleSync’s AI-powered menstrual health solutions in front of top healthcare leaders, investors, and policymakers.
+            BioAsia 2025 – Out of 1,500+ startups, we were among the 80 selected to present at India’s largest biotechnology and healthcare summit, hosted by the Government of Telangana. This opportunity allowed us to showcase CycleSync’s AI-powered menstrual health solutions in front of top healthcare leaders, investors, and policymakers.
           </p>
           <p className="text-white dark:text-neutral-200 text-xs md:text-lg font-poppins mb-8">
-            IIT Bombay E-Summit 2024 – We presented CycleSync at the IIT Bombay Entrepreneurship Summit, one of India’s most prestigious startup events. This gave us the platform to network with industry experts, VCs, and startup leaders, further refining our strategy.
+            IIT Bombay E-Summit 2025 – We presented CycleSync at the IIT Bombay Entrepreneurship Summit, one of India’s most prestigious startup events. This gave us the platform to network with industry experts, VCs, and startup leaders, further refining our strategy.
           </p>
           <p className="text-white dark:text-neutral-200 text-xs md:text-lg font-poppins mb-8">
             NSRCEL - IIM Bangalore – We were selected for NSRCEL’s Women Startup Program, under IIM Bangalore, one of India’s most reputed startup incubators. We are currently going through the “Foundations of Entrepreneurship” stage, fine-tuning our business model, product-market fit, and go-to-market strategy.
@@ -29,12 +29,12 @@ const JourneyPage: React.FC = () => {
           <div className="grid grid-cols-2 gap-4">
             <img
               src="/assets/trusted/bioasia.png"
-              alt="BioAsia 2024 presentation"
+              alt="BioAsia 2025 presentation"
               className="md:w-1/2"
             />
             <img
               src="/assets/trusted/ecelliit.png"
-              alt="IIT Bombay E-Summit 2024 presentation"
+              alt="IIT Bombay E-Summit 2025 presentation"
               className="md:w-1/4 w-1/2"
             />
             <img
@@ -52,7 +52,7 @@ const JourneyPage: React.FC = () => {
       ),
     },
     {
-      title: "January 2024 - Strengthening Our AI Capabilities",
+      title: "January 2025 - Strengthening Our AI Capabilities",
       content: (
         <div>
           <p className="text-white dark:text-neutral-200 text-xs md:text-lg font-poppins mb-8">
@@ -77,7 +77,7 @@ const JourneyPage: React.FC = () => {
       ),
     },
     {
-      title: "December 2023 - Joining the 18Startup Community",
+      title: "December 2024 - Joining the 18Startup Community",
       content: (
         <div>
           <p className="text-white dark:text-neutral-200 text-xs md:text-lg font-poppins">
@@ -94,7 +94,7 @@ const JourneyPage: React.FC = () => {
       ),
     },
     {
-      title: "November 2023 - Accepted into We Hub’s Flint Program",
+      title: "November 2024 - Accepted into We Hub’s Flint Program",
       content: (
         <div>
           <p className="text-white dark:text-neutral-200 text-xs md:text-lg font-poppins">
@@ -109,7 +109,7 @@ const JourneyPage: React.FC = () => {
       ),
     },
     {
-      title: "October 2023 - Microsoft for Startups",
+      title: "October 2024 - Microsoft for Startups",
       content: (
         <div>
           <p className="text-white dark:text-neutral-200 text-xs md:text-lg font-poppins">
