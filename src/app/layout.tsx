@@ -3,6 +3,7 @@ import { Play, Roboto, Catamaran, Poppins, Anton, Space_Grotesk } from "next/fon
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Chatbot from "@/components/Chatbot"
 
 // Import and configure the fonts
 const play = Play({
@@ -105,6 +106,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <SpeedInsights />
+        <Chatbot />
       </body>
     </html>
   );

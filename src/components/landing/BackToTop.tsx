@@ -10,7 +10,7 @@ const BackToTop = () => {
     return (
         <motion.div
             style={{ opacity }}
-            className="fixed right-[0.5rem] sm:right-[1rem] md:right-[2rem] text-sm rounded-lg z-[80] bottom-[2rem] hover:scale-[1.05] transition-all duration-200 group"
+            className="fixed left-[0.5rem] sm:left-[1rem] md:left-[2rem] text-sm rounded-lg z-[80] bottom-[2rem] hover:scale-[1.05] transition-all duration-200 group"
         >
             <Link
                 href={"#top"}
