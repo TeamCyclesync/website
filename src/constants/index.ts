@@ -67,5 +67,29 @@ export const TeamMemberDetails: TeamMemberProps[] = [
     image: "/assets/sohom.jpeg",
     twitter: "www.google.com",
     linkedin: "www.google.com",
+  },
+  {
+    name: "Nikunj Agarwal",
+    designation: "Content Writer",
+    vision: "Being part of Cycle Sync fuels my passion for transforming menstrual and reproductive health education. Through storytelling and research-driven content, I strive to break stigmas, spark dialogue, and empower women to embrace their bodies with knowledge, dignity, and unshakable pride.",
+    image: "/assets/nikunj.jpg",
+    twitter: "https://x.com/Nikunja73874145",
+    linkedin: "www.linkedin.com/in/nikunj-agarwal-d4rkm4773r",
+  },
+  {
+    name: "Sahithi kokkula",
+    designation: "Content Writer",
+    vision: "Working with Cycle Sync isn’t just a job—it’s my way of rewriting the narrative. I use my voice to challenge myths, share stories that resonate, and remind women they’re not alone. Every article I write is a small act of rebellion against stigma, and a big step toward making every body feel celebrated, not silenced.",
+    image: "/assets/sahithi.jpg",
+    twitter: "https://x.com/avrocks4c",
+    linkedin: "https://www.linkedin.com/in/sahithi-kokkula-385b882a2/",
+  },
+  {
+    name: "Lokasya Chandra",
+    designation: "Content Writer",
+    vision: "I envision a world where menstruation is understood, accepted, and supported. Through informative, engaging, and inclusive content, I strive to break taboos, educate individuals on menstrual health, promote sustainable solutions, and advocate for accessible, dignified menstrual care for all.",
+    image: "/assets/lokasya.jpg",
+    twitter: "https://x.com/LokasyaC?t=uaVnorT50oHO2L_elcbz2g&s=09",
+    linkedin: "https://www.linkedin.com/in/lokasya-chandra-0b582b296",
   }
 ];

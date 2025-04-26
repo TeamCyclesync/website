@@ -7,7 +7,7 @@ import Footer from "@/components/landing/Footer";
 import BlogCard from "@/components/BlogCard";
 import { blogData } from "./data";
 const BlogPage: React.FC = () => {
-  const [visibleBlogs, setVisibleBlogs] = useState(blogData.slice(0, 6));
+  const [visibleBlogs, setVisibleBlogs] = useState(blogData.slice(0,7));
   const [hasMore, setHasMore] = useState(true);
 
   const loadMoreBlogs = () => {
@@ -59,6 +59,14 @@ const BlogPage: React.FC = () => {
           </motion.div>
         ))}
       </main>
+      {/* {hasMore && (
+        <button
+          className="col-span-full mx-auto mt-4 px-4 py-2 bg-blue-500/30 text-white rounded"
+          onClick={loadMoreBlogs}
+        >
+          Load More
+        </button>
+      )} */}
       <Footer />
     </div>
   );
