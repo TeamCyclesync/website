@@ -397,7 +397,7 @@ export const blogData = [
   {
     id: '7',
     title: 'Implementing PCOS Management with Artificial Intelligence',
-    description: 'With Artificial Intelligence, healthcare solutions for PCOS and hormonal imbalances are becoming more effective, accessible, and personalized and therefore helping women detect and manage PCOS more easily.',
+    description: 'With AI & healthcare solutions for PCOS and hormonal imbalances are becoming more effective & accessible, therefore helping women detect and manage PCOS more easily.',
     image: '/assets/hero7.jpeg',
     authorImage: '/assets/lokasya.jpg',
     author: 'Lokasya',
