@@ -4,10 +4,33 @@ import Footer from "@/components/landing/Footer";
 import BlogDetailClient from "@/components/BlogDetailClient";
 import { formatUrlForSEO } from "@/lib/utils";
 
-interface Props {
-  params: {
-    post: string;
-  };
+export default async function BlogPost({ params }: { params: { post: string } }) {
+  const { post } = params;
+
+  const story = await getBlogPost(post);
+
+  if (!story) {
+    return (
+      <div className="min-h-screen">
+        <div className="inset-0 bg-gradient-to-r from-purple-900/20 to-cyan-900/20">
+          <Navigation />
+        </div>
+        <main className="flex-grow container mx-auto p-4 mt-32">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-2xl font-anton">Blog post not found</h1>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  return (
+    <>
+      <Navigation />
+      <BlogDetailClient story={story} />
+    </>
+  );
 }
 
 async function getBlogPost(post: string) {
@@ -36,31 +59,4 @@ async function getBlogPost(post: string) {
     console.error("Error fetching blog post from Storyblok:", error);
     return null;
   }
-}
-
-export default async function BlogPost({ params }: Props) {
-  const story = await getBlogPost(params.post);
-
-  if (!story) {
-    return (
-      <div className="min-h-screen">
-        <div className="inset-0 bg-gradient-to-r from-purple-900/20 to-cyan-900/20">
-          <Navigation />
-        </div>
-        <main className="flex-grow container mx-auto p-4 mt-32">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-2xl font-anton">Blog post not found</h1>
-          </div>
-        </main>
-        <Footer />
-      </div>
-    );
-  }
-
-  return (
-    <>
-      <Navigation />
-      <BlogDetailClient story={story} />
-    </>
-  );
 }
