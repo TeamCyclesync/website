@@ -6,15 +6,6 @@ import Footer from "@/components/landing/Footer";
 import BlogDetailClient from "@/components/BlogDetailClient";
 import { formatUrlForSEO } from "@/lib/utils";
 
-interface Params {
-  post: string;
-}
-
-interface Props {
-  params: Params;
-}
-
-// Fetch a single blog post by SEO-friendly URL
 async function getBlogPost(postSlug: string) {
   if (!storyblokApi) {
     console.error("Storyblok API is not initialized");
@@ -23,7 +14,7 @@ async function getBlogPost(postSlug: string) {
 
   try {
     const { data } = await storyblokApi.get("cdn/stories/blogs", {
-      version: "draft", // Change to "published" in production
+      version: "draft", // change to "published" in production
     });
 
     const body = data?.story?.content?.body ?? [];
@@ -41,8 +32,11 @@ async function getBlogPost(postSlug: string) {
   }
 }
 
-// Main page component
-export default async function BlogPost({ params }: Props) {
+export default async function BlogPost({
+  params,
+}: {
+  params: { post: string };
+}) {
   const story = await getBlogPost(params.post);
 
   if (!story) {
