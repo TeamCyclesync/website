@@ -22,7 +22,7 @@ async function getBlogPosts() {
   }
   try {
     const { data } = await storyblokApi.get("cdn/stories/blogs", {
-      version: "draft"
+      version: "published"
     });
     if (data?.story?.content?.body) {
       return data.story.content.body

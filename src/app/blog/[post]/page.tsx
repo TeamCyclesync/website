@@ -14,7 +14,7 @@ async function getBlogPost(postSlug: string) {
   }
   try {
     const { data } = await storyblokApi.get("cdn/stories/blogs", {
-      version: "draft", // use "published" for prod
+      version: "published"
     });
 
     const body = data?.story?.content?.body ?? [];

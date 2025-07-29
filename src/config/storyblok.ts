@@ -9,6 +9,6 @@ export const storyblokApi = storyblokInit({
   use: [apiPlugin],
   apiOptions: {
     region: "eu",
-    version: "draft"
+    version: "published"
   }
 })(); 
