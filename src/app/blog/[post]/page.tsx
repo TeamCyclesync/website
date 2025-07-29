@@ -4,9 +4,34 @@ import Footer from "@/components/landing/Footer";
 import BlogDetailClient from "@/components/BlogDetailClient";
 import { formatUrlForSEO } from "@/lib/utils";
 
-export default async function BlogPost({ params }: { params: { post: string } }) {
-  const { post } = params;
+async function getBlogPost(post: string) {
+  if (!storyblokApi) {
+    console.error("Storyblok API is not initialized");
+    return null;
+  }
+  try {
+    const { data: pageData } = await storyblokApi.get("cdn/stories/blogs", {
+      version: "draft"
+    });
 
+    if (pageData?.story?.content?.body) {
+      const blogPost = pageData.story.content.body.find((block: any) =>
+        block.component === "blog_post" && formatUrlForSEO(block.Url) === post
+      );
+      if (blogPost) {
+        return { content: blogPost };
+      }
+    }
+    return null;
+  } catch (error) {
+    console.error("Error fetching blog post from Storyblok:", error);
+    return null;
+  }
+}
+
+// ✅ Destructure inside the function instead of parameter list
+export default async function BlogPost(props: { params: { post: string } }) {
+  const post = props.params.post;
   const story = await getBlogPost(post);
 
   if (!story) {
@@ -31,32 +56,4 @@ export default async function BlogPost({ params }: { params: { post: string } })
       <BlogDetailClient story={story} />
     </>
   );
-}
-
-async function getBlogPost(post: string) {
-  if (!storyblokApi) {
-    console.error("Storyblok API is not initialized");
-    return null;
-  }
-
-  try {
-    const { data: pageData } = await storyblokApi.get("cdn/stories/blogs", {
-      version: "draft"
-    });
-
-    if (pageData?.story?.content?.body) {
-      const blogPost = pageData.story.content.body.find((block: any) =>
-        block.component === "blog_post" && formatUrlForSEO(block.Url) === post
-      );
-
-      if (blogPost) {
-        return { content: blogPost };
-      }
-    }
-
-    return null;
-  } catch (error) {
-    console.error("Error fetching blog post from Storyblok:", error);
-    return null;
-  }
 }
