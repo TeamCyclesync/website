@@ -4,14 +4,12 @@ import Footer from "@/components/landing/Footer";
 import BlogDetailClient from "@/components/BlogDetailClient";
 import { formatUrlForSEO } from "@/lib/utils";
 
-// Correctly typed interface for the dynamic route params
-interface BlogPostPageProps {
+interface Props {
   params: {
     post: string;
   };
 }
 
-// Fetch a single blog post by matching the formatted URL slug
 async function getBlogPost(post: string) {
   if (!storyblokApi) {
     console.error("Storyblok API is not initialized");
@@ -40,10 +38,8 @@ async function getBlogPost(post: string) {
   }
 }
 
-// Main blog post page component
-export default async function BlogPost({ params }: BlogPostPageProps) {
-  const { post } = params;
-  const story = await getBlogPost(post);
+export default async function BlogPost({ params }: Props) {
+  const story = await getBlogPost(params.post);
 
   if (!story) {
     return (
