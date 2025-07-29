@@ -6,15 +6,15 @@ import Footer from "@/components/landing/Footer";
 import BlogDetailClient from "@/components/BlogDetailClient";
 import { formatUrlForSEO } from "@/lib/utils";
 
+
 async function getBlogPost(postSlug: string) {
   if (!storyblokApi) {
     console.error("Storyblok API is not initialized");
     return null;
   }
-
   try {
     const { data } = await storyblokApi.get("cdn/stories/blogs", {
-      version: "draft", // change to "published" in production
+      version: "draft", // use "published" for prod
     });
 
     const body = data?.story?.content?.body ?? [];
@@ -32,11 +32,8 @@ async function getBlogPost(postSlug: string) {
   }
 }
 
-export default async function BlogPost({
-  params,
-}: {
-  params: { post: string };
-}) {
+// Minimal inline props type, avoid external interface
+export default async function BlogPost({ params }: { params: { post: string } }) {
   const story = await getBlogPost(params.post);
 
   if (!story) {
