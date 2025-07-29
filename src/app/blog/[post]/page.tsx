@@ -32,9 +32,14 @@ async function getBlogPost(postSlug: string) {
   }
 }
 
-// Minimal inline props type, avoid external interface
-export default async function BlogPost({ params }: { params: { post: string } }) {
-  const story = await getBlogPost(params.post);
+interface BlogPostPageProps {
+  params?: Promise<{ post: string }>;
+  searchParams?: Promise<any>;
+}
+
+export default async function BlogPost({ params }: BlogPostPageProps) {
+  const resolvedParams = params ? await params : { post: '' };
+  const story = await getBlogPost(resolvedParams.post);
 
   if (!story) {
     return (
