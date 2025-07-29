@@ -6,6 +6,14 @@ import Footer from "@/components/landing/Footer";
 import BlogDetailClient from "@/components/BlogDetailClient";
 import { formatUrlForSEO } from "@/lib/utils";
 
+interface Params {
+  post: string;
+}
+
+interface Props {
+  params: Params;
+}
+
 // Fetch a single blog post by SEO-friendly URL
 async function getBlogPost(postSlug: string) {
   if (!storyblokApi) {
@@ -34,11 +42,7 @@ async function getBlogPost(postSlug: string) {
 }
 
 // Main page component
-export default async function BlogPost({
-  params,
-}: {
-  params: { post: string };
-}) {
+export default async function BlogPost({ params }: Props) {
   const story = await getBlogPost(params.post);
 
   if (!story) {
