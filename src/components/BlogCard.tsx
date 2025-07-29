@@ -1,7 +1,7 @@
+"use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { FaArrowCircleRight } from "react-icons/fa";
-
 
 interface BlogCardProps {
   id: string;
@@ -9,10 +9,10 @@ interface BlogCardProps {
   description: string;
   image: string;
   type: string;
+  Url: string;
 }
 
-const BlogCard: React.FC<BlogCardProps> = ({ id, title, description, image, type }) => {
-
+const BlogCard: React.FC<BlogCardProps> = ({ id, title, description, image, type, Url }) => {
   return (
     <div className="rounded-lg shadow-lg overflow-hidden group custom-hover-effect relative h-full bg-white/50 group-hover:bg-white/0">
       <div className="relative">
@@ -24,7 +24,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ id, title, description, image, type
       <div className="p-4">
         <h2 className="relative md:h-24 h-16 z-10 md:text-2xl text-md tracking-wide font-anton mb-2 text-black/90">{title}</h2>
         <p className="text-gray-700 mb-4 md:h-16 h-20 text-sm font-poppins">{description}</p>
-        <Link href={`/blog/${id}`} passHref>
+        <Link href={`/blog/${Url}`} passHref>
           <div className="text-black text-lg hover:underline flex items-center justify-between cursor-pointer">
             Read More
             <div className="ml-2 transform transition-transform duration-300 group-hover:-rotate-45">

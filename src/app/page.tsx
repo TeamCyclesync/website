@@ -21,7 +21,7 @@ const LandingPage = () => {
 
       <Navigation />
     
-      <main className="flex flex-col max-sm:gap-[5rem] gap-[1rem]">
+      <main className="md:mt-0 mt-20 flex flex-col max-sm:gap-[5rem] gap-[1rem]">
         {/* Hero Section */}
         <HeroSection />
 

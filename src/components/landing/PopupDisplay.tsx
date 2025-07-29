@@ -42,7 +42,7 @@ const PopupDisplay: FC<PopupDisplayProps> = ({
             }}
             whileHover={{ scale: 1.05 }}
             className={cn(
-                "rounded-lg text-purple-900 font-medium p-2 sm:py-4 sm:px-6 bg-white absolute shadow-lg z-[120] text-sm flex gap-4 flex-col justify-center items-center max-sm:pt-4",
+                "rounded-lg text-purple-900 font-medium p-2 sm:py-4 sm:px-6 bg-white absolute shadow-lg text-sm flex gap-4 flex-col justify-center items-center max-sm:pt-4",
                 className
             )}
         >

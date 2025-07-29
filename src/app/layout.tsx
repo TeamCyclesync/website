@@ -4,6 +4,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Chatbot from "@/components/Chatbot"
+import ClientRoot from '@/components/ClientRoot';
 
 // Import and configure the fonts
 const play = Play({
@@ -101,12 +102,14 @@ export default function RootLayout({
   return (
     <html lang="en" >
       <body
-        className={`${roboto.className}  ${play.className} antialiased overflow-x-hidden`}
+        className={`${roboto.className}  ${play.className} antialiased overflow-x-hidden `}
       >
-        {children}
+        <ClientRoot>
+          {children}
+        </ClientRoot>
         <Analytics />
         <SpeedInsights />
-        <Chatbot />
+        {/* <Chatbot /> */}
       </body>
     </html>
   );

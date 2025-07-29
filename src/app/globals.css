@@ -169,3 +169,8 @@ html {
     opacity: 1;
   }
 }
+.backdrop-blur-2px {
+  backdrop-filter: blur(3px);
+  /* for Safari support */
+  -webkit-backdrop-filter: blur(2px);
+}

@@ -6,16 +6,17 @@ import { RiAppsLine } from 'react-icons/ri';
 import Image from 'next/image';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import SignupForm from '@/components/SignupForm';
+import { Menu } from 'lucide-react';
 
 export const NavLinkList = [
   {
     title: 'Home',
     link: '/',
   },
-  {
-    title: 'Team',
-    link: '/team',
-  },
+  // {
+  //   title: 'Team',
+  //   link: '/team',
+  // },
   {
     title: 'Blogs',
     link: '/blog',
@@ -60,8 +61,8 @@ const SideNavigation = () => {
     <div className="md:hidden">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
-          <button className="focus:outline-none" aria-label="Open navigation menu">
-            <RiAppsLine size={25} className="text-white" />
+          <button className="focus:outline-none flex items-center justify-center w-10 h-10 mx-auto" aria-label="Open navigation menu">
+            <Menu size={28} className="text-white" />
           </button>
         </SheetTrigger>
         <SheetContent side="right" className="w-[300px] sm:w-[400px] flex flex-col justify-between z-[101]">

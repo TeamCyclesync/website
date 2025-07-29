@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
-
+import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="bg-transparent py-8 text-white">
@@ -16,14 +16,9 @@ const Footer = () => {
             <h2 className="text-lg font-anton tracking-widest underline underline-offset-4">LEGAL</h2>
             <ul className="text-sm space-y- ">
               <li>
-          <a className="hover:underline font-poppins" href="#">
-            Privacy &amp; Policy
-          </a>
-              </li>
-              <li>
-          <a className="hover:underline font-poppins" href="#">
-            Terms &amp; Conditions
-          </a>
+                <Link className="hover:underline font-poppins" href="/privacy-policy">
+                  Privacy &amp; Policy
+                </Link>
               </li>
             </ul>
           </div>
