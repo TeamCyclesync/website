@@ -1,38 +1,45 @@
+// app/blog/[post]/page.tsx
+
 import { storyblokApi } from "@/config/storyblok";
 import Navigation from "@/components/nav/Navigation";
 import Footer from "@/components/landing/Footer";
 import BlogDetailClient from "@/components/BlogDetailClient";
 import { formatUrlForSEO } from "@/lib/utils";
 
-async function getBlogPost(post: string) {
+// Fetch a single blog post by SEO-friendly URL
+async function getBlogPost(postSlug: string) {
   if (!storyblokApi) {
     console.error("Storyblok API is not initialized");
     return null;
   }
+
   try {
-    const { data: pageData } = await storyblokApi.get("cdn/stories/blogs", {
-      version: "draft"
+    const { data } = await storyblokApi.get("cdn/stories/blogs", {
+      version: "draft", // Change to "published" in production
     });
 
-    if (pageData?.story?.content?.body) {
-      const blogPost = pageData.story.content.body.find((block: any) =>
-        block.component === "blog_post" && formatUrlForSEO(block.Url) === post
-      );
-      if (blogPost) {
-        return { content: blogPost };
-      }
-    }
-    return null;
+    const body = data?.story?.content?.body ?? [];
+
+    const blogPost = body.find(
+      (block: any) =>
+        block.component === "blog_post" &&
+        formatUrlForSEO(block.Url) === postSlug
+    );
+
+    return blogPost ? { content: blogPost } : null;
   } catch (error) {
     console.error("Error fetching blog post from Storyblok:", error);
     return null;
   }
 }
 
-// ✅ Destructure inside the function instead of parameter list
-export default async function BlogPost(props: { params: { post: string } }) {
-  const post = props.params.post;
-  const story = await getBlogPost(post);
+// Main page component
+export default async function BlogPost({
+  params,
+}: {
+  params: { post: string };
+}) {
+  const story = await getBlogPost(params.post);
 
   if (!story) {
     return (
@@ -54,6 +61,7 @@ export default async function BlogPost(props: { params: { post: string } }) {
     <>
       <Navigation />
       <BlogDetailClient story={story} />
+      <Footer />
     </>
   );
 }
