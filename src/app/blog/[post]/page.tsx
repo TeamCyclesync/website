@@ -4,23 +4,35 @@ import Footer from "@/components/landing/Footer";
 import BlogDetailClient from "@/components/BlogDetailClient";
 import { formatUrlForSEO } from "@/lib/utils";
 
+// Correctly typed interface for the dynamic route params
+interface BlogPostPageProps {
+  params: {
+    post: string;
+  };
+}
+
+// Fetch a single blog post by matching the formatted URL slug
 async function getBlogPost(post: string) {
   if (!storyblokApi) {
     console.error("Storyblok API is not initialized");
     return null;
   }
+
   try {
     const { data: pageData } = await storyblokApi.get("cdn/stories/blogs", {
       version: "draft"
     });
+
     if (pageData?.story?.content?.body) {
       const blogPost = pageData.story.content.body.find((block: any) =>
         block.component === "blog_post" && formatUrlForSEO(block.Url) === post
       );
+
       if (blogPost) {
         return { content: blogPost };
       }
     }
+
     return null;
   } catch (error) {
     console.error("Error fetching blog post from Storyblok:", error);
@@ -28,9 +40,11 @@ async function getBlogPost(post: string) {
   }
 }
 
-export default async function BlogPost({ params }: { params: { post: string } }) {
+// Main blog post page component
+export default async function BlogPost({ params }: BlogPostPageProps) {
   const { post } = params;
   const story = await getBlogPost(post);
+
   if (!story) {
     return (
       <div className="min-h-screen">
@@ -46,6 +60,7 @@ export default async function BlogPost({ params }: { params: { post: string } })
       </div>
     );
   }
+
   return (
     <>
       <Navigation />
