@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
   category: "Health & Fitness",
   verification: {
-    google: "P_M_8FVsu3FK6y7cYPWw9vnVQBNOSiiMKrK2JOOdiA8"
+    google: "fNI8iIIWrOkR-YYm6tIc79zMnjSQAVwWATXjfMOJxdU"
   },
   alternates: {
     canonical: "https://www.cyclesync.in/"
