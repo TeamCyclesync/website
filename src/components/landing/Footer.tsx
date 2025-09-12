@@ -8,16 +8,21 @@ const Footer = () => {
         <div className="flex flex-col items-start md:items-start mb-4 md:mb-0">
           <img
             alt="Logo"
-            src="./assets/logo.png"
+            src="/assets/logo.png"
             className="w-16 h-16 mb-4 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-16 lg:h-16"
           />
           <p className="text-sm font-poppins">© 2025 CycleSync</p>
           <div className="mt-2 space-y-1">
             <h2 className="text-lg font-anton tracking-widest underline underline-offset-4">LEGAL</h2>
-            <ul className="text-sm space-y- ">
+            <ul className="text-sm space-y-1">
               <li>
                 <Link className="hover:underline font-poppins" href="/privacy-policy">
                   Privacy &amp; Policy
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:underline font-poppins" href="/medical-disclaimer">
+                  Medical Disclaimer
                 </Link>
               </li>
             </ul>

@@ -58,10 +58,10 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
   }
 
   return (
-    <>
+    <div className="gradient-bg dotted-grid-mask min-h-screen grid grid-rows-[auto_1fr_auto] relative overflow-x-hidden">
       <Navigation />
       <BlogDetailClient story={story} />
       <Footer />
-    </>
+    </div>
   );
 }
