@@ -59,3 +59,6 @@ export default async function BlogPage() {
     </div>
   );
 }
+
+// Revalidate every 60 seconds to get new blogs from Storyblok
+export const revalidate = 4000;

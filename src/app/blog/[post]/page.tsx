@@ -65,3 +65,6 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
     </div>
   );
 }
+
+// Revalidate every 60 seconds to get updated blog content from Storyblok
+export const revalidate = 4000;
