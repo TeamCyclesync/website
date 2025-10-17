@@ -21,6 +21,7 @@ import { AnimatedCard2, CardBody2, CardDescription2, CardTitle2, CardVisual2, } 
 import { Visual2 } from "@/components/ui/analytics-card2"
 import { WordPullUp } from "@/components/ui/word-pullup"
 import { SplitText } from '@/components/ui/text-split';
+import { easings } from '@react-spring/web';
 
 interface BookingFormData {
   name: string;
@@ -129,7 +130,7 @@ const TelemedicinePage: React.FC = () => {
             delay={30}
             animationFrom={{ opacity: 0, transform: 'translate3d(0, 30px, 0)' }}
             animationTo={{ opacity: 1, transform: 'translate3d(0, 0, 0)' }}
-            easing="easeOutCubic"
+            easing={easings.easeOutCubic}
             threshold={0.3}
             rootMargin="-100px"
           />
