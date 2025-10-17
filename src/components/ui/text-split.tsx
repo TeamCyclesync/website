@@ -1,5 +1,5 @@
 
-import { useSprings, animated } from '@react-spring/web';
+import { useSprings, animated, easings, type EasingFunction } from '@react-spring/web';
 import { useEffect, useRef, useState } from 'react';
 
 interface SplitTextProps {
@@ -8,7 +8,7 @@ interface SplitTextProps {
   delay?: number;
   animationFrom?: object; 
   animationTo?: object; 
-  easing?: string; 
+  easing?: EasingFunction; 
   threshold?: number;
   rootMargin?: string;
   textAlign?: 'left' | 'right' | 'center' | 'justify';
@@ -21,7 +21,7 @@ export const SplitText = ({
   delay = 100,
   animationFrom = { opacity: 0, transform: 'translate3d(0,40px,0)' },
   animationTo = { opacity: 1, transform: 'translate3d(0,0,0)' },
-  easing = 'easeOutCubic',
+  easing = easings.easeOutCubic,
   threshold = 0.1,
   rootMargin = '-100px',
   textAlign = 'center',
