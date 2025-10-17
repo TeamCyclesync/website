@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
-import { Doctor } from './DoctorCard';
+import { Doctor } from '@/types/doctor';
 
 interface BookingFormData {
   name: string;
