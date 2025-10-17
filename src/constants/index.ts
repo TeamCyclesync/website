@@ -10,6 +10,10 @@ export const NavLinkList = [
     link: '/blog'
   },
   {
+    title: 'Telemedicine',
+    link: '/telemedicine'
+  },
+  {
     title: 'Signup',
     link: "#signup"
   },
