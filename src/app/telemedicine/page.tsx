@@ -36,7 +36,7 @@ const testimonialsData: Testimonial[] = [
   {
     type: "user",
     quote:
-      "I was hesitant about online consultations at first, but my experience with CycleSync completely changed my view. The gynecologist patiently listened and gave me clear guidance for my PCOS management. Truly a stress-free experience!",
+      "I was hesitant about online consultations at first, but with CycleSync, it completely changed my view. The gynecologist patiently list & gave me clear guidance for my PCOS management. Truly a stress-free experience!",
     name: "Neha Singh",
     avatarSrc: "/assets/shravya.jpg",
     avatarFallback: "NV",
@@ -239,10 +239,10 @@ const TelemedicinePage: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full bg-transparent">
+        <div className="md:w-3/4 w-full mx-auto grid justify-center items-center justify-items-center bg-transparent">
           <TestimonialSection
             className='text-white'
-            title="Empowering more Women"
+            title="Empowering Women"
             testimonials={testimonialsData}
           />
         </div>

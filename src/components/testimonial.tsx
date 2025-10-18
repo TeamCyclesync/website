@@ -108,7 +108,7 @@ const TestimonialSection = React.forwardRef<
       {...props}
     >
       <div className="flex flex-col items-center text-center gap-4 mb-12">
-        <h2 className="text-3xl md:text-5xl font-cat tracking-wide">{title}</h2>
+        <h2 className="text-2xl md:text-5xl font-cat tracking-wide">{title}</h2>
       </div>
 
       <motion.div
