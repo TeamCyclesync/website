@@ -6,6 +6,8 @@ import Footer from '@/components/landing/Footer';
 import type { Doctor } from '@/types/doctor';
 import BookingFormModal from '@/components/BookingFormModal'
 
+import { TestimonialSection, Testimonial } from "@/components/testimonial";
+
 import { Button } from '@/components/ui/button-1';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Info } from 'lucide-react';
@@ -29,6 +31,31 @@ interface BookingFormData {
   phone: string;
   age: string;
 }
+
+const testimonialsData: Testimonial[] = [
+  {
+    type: "user",
+    quote:
+      "I was hesitant about online consultations at first, but my experience with CycleSync completely changed my view. The gynecologist patiently listened and gave me clear guidance for my PCOS management. Truly a stress-free experience!",
+    name: "Neha Singh",
+    avatarSrc: "/assets/shravya.jpg",
+    avatarFallback: "NV",
+  },
+  {
+    type: "quote",
+    quote:
+      "CycleSync made consulting a specialist so easy. I could book a slot that fit my routine and talk to a doctor from home. The privacy and comfort made all the difference for me.",
+    name: "Riya Sharma",
+  },
+  {
+    type: "user",
+    quote:
+      "I used CycleSync for my irregular periods, and the doctor helped me understand my cycle better with lifestyle changes and treatment options. I now feel more in control of my health.",
+    name: "Sanjana Verma ",
+    avatarSrc: "/assets/lokasya.jpg",
+    avatarFallback: "PI",
+  },
+];
 
 const TelemedicinePage: React.FC = () => {
   const [selectedDoctor, setSelectedDoctor] = useState<Doctor | null>(null);
@@ -127,7 +154,7 @@ const TelemedicinePage: React.FC = () => {
           <SplitText
             text={`Connect with experienced gynecologists from the comfort of your home.\nGet professional medical advice, treatment plans, and ongoing support for your women's health needs.`}
             className="text-sm md:text-xl text-white/90 max-w-3xl mx-auto font-poppins text-center"
-            delay={30}
+            delay={15}
             animationFrom={{ opacity: 0, transform: 'translate3d(0, 30px, 0)' }}
             animationTo={{ opacity: 1, transform: 'translate3d(0, 0, 0)' }}
             easing={easings.easeOutCubic}
@@ -206,14 +233,22 @@ const TelemedicinePage: React.FC = () => {
               <GlassDoctorCard
                 key={doctor.id}
                 doctor={doctor}
-                // onScheduleCall={handleScheduleCall}
+              // onScheduleCall={handleScheduleCall}
               />
             ))}
           </div>
         </div>
 
+        <div className="w-full bg-transparent">
+          <TestimonialSection
+            className='text-white'
+            title="Empowering more Women"
+            testimonials={testimonialsData}
+          />
+        </div>
+
         {/* Disclaimer */}
-        <div className="my-10 mx-8 md:flex justify-center hidden">
+        <div className="my-8 mx-8 md:flex justify-center hidden">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
