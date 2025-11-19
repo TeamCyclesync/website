@@ -4,6 +4,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Chatbot from "@/components/Chatbot"
+import Script from "next/script";
 import ClientRoot from '@/components/ClientRoot';
 
 // Import and configure the fonts
@@ -104,9 +105,18 @@ export default function RootLayout({
       <body
         className={`${roboto.className}  ${play.className} antialiased overflow-x-hidden `}
       >
+
+        {/* DUNS Website Seal Script */}
+        <Script 
+          src="https://dunsregistered.dnb.com"
+          type="text/javascript"
+          strategy="afterInteractive"
+        />
+
         <ClientRoot>
           {children}
         </ClientRoot>
+
         <Analytics />
         <SpeedInsights />
         {/* <Chatbot /> */}
@@ -114,3 +124,4 @@ export default function RootLayout({
     </html>
   );
 }
+
